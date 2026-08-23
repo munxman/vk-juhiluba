@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="robots" content="noindex,nofollow">
+ <title>Медична довідка для водійських прав того ж дня | Valvekliinik Таллінн</title>
+ <meta name="description" content="Медична довідка водія в Таллінні — того ж дня, без направлення. Медичний огляд для водійських прав від 65 €. Valvekliinik, Ülemiste City.">
+
+ <!-- Open Graph -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://valvekliinik.ee/juhiluba/uk/">
+ <meta property="og:title" content="Медична довідка для водійських прав того ж дня | Valvekliinik Таллінн">
+ <meta property="og:description" content="Медична довідка водія в Таллінні того ж дня. Від 65 €. Без направлення. Запишіться онлайн.">
+ <meta property="og:site_name" content="Valvekliinik">
+
+ <!-- Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+ <style>
+  :root {
+   --paper: #F4F1EA;
+   --vein: #5E262C;
+   --tellis: #98544E;
+   --roosa: #E6D3CE;
+   --kivi: #C4BBAE;
+   --ink: #1A1A1A;
+   --white: #FFFFFF;
+   --font: 'Poppins', system-ui, -apple-system, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 18px; scroll-behavior: smooth; }
+  body { font-family: var(--font); color: var(--ink); background: var(--paper); line-height: 1.65; }
+  a { color: var(--vein); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .container { max-width: 940px; margin: 0 auto; padding: 0 24px; }
+
+  /* Top bar */
+  .top-bar {
+   background: var(--ink);
+   color: rgba(255,255,255,0.6);
+   font-size: 0.76rem;
+   padding: 9px 0;
+   text-align: center;
+  }
+  .top-bar a { color: #ffffff; font-weight: 600; }
+  .top-bar .sep { margin: 0 8px; opacity: 0.35; }
+
+  /* Header */
+  .site-header {
+   background: var(--white);
+   border-bottom: 1px solid var(--kivi);
+   padding: 14px 0;
+   position: sticky;
+   top: 0;
+   z-index: 200;
+  }
+  .site-header .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 16px;
+  }
+  .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .logo-link img { height: 34px; display: block; }
+  .header-nav { display: flex; align-items: center; gap: 20px; }
+  .header-phone { font-weight: 600; font-size: 0.88rem; color: var(--ink); }
+  .btn-primary {
+   display: inline-block;
+   background: var(--vein);
+   color: #ffffff;
+   padding: 10px 24px;
+   border-radius: 6px;
+   font-weight: 600;
+   font-size: 0.85rem;
+   text-decoration: none;
+   transition: background 0.18s;
+   white-space: nowrap;
+  }
+  .btn-primary:hover { background: var(--tellis); text-decoration: none; }
+
+  /* Hero */
+  .hero {
+   background: var(--white);
+   padding: 68px 0 54px;
+   border-bottom: 1px solid var(--kivi);
+   text-align: center;
+  }
+  .overline {
+   display: inline-block;
+   font-size: 0.68rem;
+   font-weight: 600;
+   letter-spacing: 0.13em;
+   text-transform: uppercase;
+   color: var(--tellis);
+   margin-bottom: 18px;
+  }
+  .hero h1 {
+   font-size: clamp(1.85rem, 4.5vw, 2.75rem);
+   font-weight: 600;
+   line-height: 1.15;
+   margin-bottom: 18px;
+   letter-spacing: -0.02em;
+  }
+  .hero h1 em {
+   font-style: normal;
+   color: var(--vein);
+  }
+  .hero .lead {
+   font-size: 1.05rem;
+   color: var(--tellis);
+   max-width: 500px;
+   margin: 0 auto 30px;
+  }
+  .hero-price-row {
+   margin-bottom: 30px;
+  }
+  .hero-price {
+   font-size: 2.5rem;
+   font-weight: 600;
+   color: var(--ink);
+   line-height: 1;
+   margin-bottom: 6px;
+  }
+  .hero-price-note {
+   font-size: 0.82rem;
+   color: var(--kivi);
+  }
+  .btn-hero {
+   display: inline-block;
+   background: var(--vein);
+   color: #ffffff;
+   padding: 15px 42px;
+   border-radius: 6px;
+   font-weight: 600;
+   font-size: 1rem;
+   text-decoration: none;
+   transition: all 0.18s;
+  }
+  .btn-hero:hover { background: var(--tellis); transform: translateY(-1px); text-decoration: none; }
+  .hero-sub {
+   margin-top: 14px;
+   font-size: 0.82rem;
+   color: var(--kivi);
+  }
+  .hero-sub a { color: var(--vein); font-weight: 600; }
+
+  /* USP strip */
+  .usp-strip {
+   background: var(--ink);
+   padding: 20px 0;
+  }
+  .usp-grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 8px;
+   text-align: center;
+  }
+  .usp-item { padding: 8px; }
+  .usp-icon { font-size: 1.25rem; margin-bottom: 4px; }
+  .usp-label { font-size: 0.78rem; font-weight: 600; color: #ffffff; }
+
+  /* Generic section */
+  .section { padding: 56px 0; }
+  .section-white { background: var(--white); }
+  .section-paper { background: var(--paper); }
+  .section-title {
+   font-size: 1.55rem;
+   font-weight: 600;
+   letter-spacing: -0.02em;
+   margin-bottom: 10px;
+   text-align: center;
+  }
+  .section-lead {
+   text-align: center;
+   color: var(--tellis);
+   font-size: 0.9rem;
+   margin-bottom: 40px;
+  }
+  .section-head {
+   text-align: center;
+   margin-bottom: 40px;
+  }
+  .section-head .overline { display: block; }
+
+  /* Exam checks */
+  .exam-grid {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 14px;
+  }
+  .exam-card {
+   background: var(--white);
+   border: 1px solid var(--kivi);
+   border-radius: 10px;
+   padding: 20px 14px;
+   text-align: center;
+  }
+  .exam-card .exam-icon { font-size: 1.5rem; margin-bottom: 10px; }
+  .exam-card .exam-name { font-size: 0.8rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
+
+  /* Categories table */
+  .cat-table-wrap {
+   overflow-x: auto;
+   border-radius: 10px;
+   border: 1px solid var(--kivi);
+   background: var(--white);
+  }
+  .cat-table {
+   width: 100%;
+   border-collapse: collapse;
+   font-size: 0.88rem;
+  }
+  .cat-table th {
+   background: var(--vein);
+   color: #ffffff;
+   padding: 13px 18px;
+   text-align: left;
+   font-weight: 600;
+   font-size: 0.8rem;
+   letter-spacing: 0.04em;
+  }
+  .cat-table td {
+   padding: 13px 18px;
+   border-bottom: 1px solid var(--roosa);
+   color: var(--ink);
+  }
+  .cat-table tr:last-child td { border-bottom: none; }
+  .cat-table tr:nth-child(even) td { background: #faf8f4; }
+  .cat-badge {
+   display: inline-block;
+   background: var(--roosa);
+   color: var(--vein);
+   border-radius: 4px;
+   padding: 2px 8px;
+   font-size: 0.78rem;
+   font-weight: 600;
+  }
+  .notice-box {
+   background: var(--roosa);
+   border-left: 3px solid var(--tellis);
+   border-radius: 0 8px 8px 0;
+   padding: 14px 18px;
+   font-size: 0.85rem;
+   color: var(--ink);
+   margin-top: 16px;
+  }
+  .notice-box a { color: var(--vein); font-weight: 600; }
+
+  /* Steps */
+  .steps-list {
+   display: flex;
+   flex-direction: column;
+   gap: 0;
+   max-width: 640px;
+   margin: 0 auto;
+  }
+  .step-row {
+   display: flex;
+   gap: 20px;
+   align-items: flex-start;
+   position: relative;
+   padding-bottom: 30px;
+  }
+  .step-row:last-child { padding-bottom: 0; }
+  .step-row:not(:last-child)::after {
+   content: '';
+   position: absolute;
+   left: 20px;
+   top: 44px;
+   bottom: 0;
+   width: 2px;
+   background: var(--roosa);
+  }
+  .step-num {
+   flex-shrink: 0;
+   width: 42px;
+   height: 42px;
+   border-radius: 50%;
+   background: var(--vein);
+   color: #ffffff;
+   font-weight: 600;
+   font-size: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   z-index: 1;
+  }
+  .step-body { padding-top: 8px; }
+  .step-body h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; color: var(--ink); }
+  .step-body p { font-size: 0.85rem; color: var(--tellis); line-height: 1.6; }
+  .step-body a { color: var(--vein); font-weight: 600; }
+  .step-body .step-tag {
+   display: inline-block;
+   font-size: 0.72rem;
+   font-weight: 600;
+   background: var(--roosa);
+   color: var(--vein);
+   border-radius: 4px;
+   padding: 2px 8px;
+   margin-bottom: 8px;
+   text-transform: uppercase;
+   letter-spacing: 0.06em;
+  }
+
+  /* Bring list */
+  .bring-cols {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 40px;
+   align-items: start;
+  }
+  .bring-list {
+   list-style: none;
+  }
+  .bring-list li {
+   display: flex;
+   align-items: flex-start;
+   gap: 12px;
+   padding: 12px 0;
+   border-bottom: 1px solid var(--kivi);
+   font-size: 0.88rem;
+   color: var(--ink);
+  }
+  .bring-list li:last-child { border-bottom: none; }
+  .check-mark {
+   color: var(--vein);
+   font-weight: 600;
+   flex-shrink: 0;
+   line-height: 1.65;
+  }
+  .info-panel {
+   background: var(--roosa);
+   border-radius: 12px;
+   padding: 26px 22px;
+  }
+  .info-panel h3 {
+   font-size: 0.95rem;
+   font-weight: 600;
+   margin-bottom: 14px;
+   color: var(--ink);
+  }
+  .info-panel p {
+   font-size: 0.85rem;
+   color: var(--tellis);
+   margin-bottom: 10px;
+   line-height: 1.6;
+  }
+  .info-panel p:last-child { margin-bottom: 0; }
+  .info-panel a { color: var(--vein); font-weight: 600; }
+
+  /* Pricing */
+  .price-cards {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px;
+   max-width: 640px;
+   margin: 0 auto;
+  }
+  .price-card {
+   background: var(--white);
+   border: 2px solid var(--kivi);
+   border-radius: 12px;
+   padding: 30px 22px;
+   text-align: center;
+   transition: border-color 0.18s;
+  }
+  .price-card:hover { border-color: var(--vein); }
+  .price-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+  .price-card .cat-list { font-size: 0.8rem; color: var(--kivi); margin-bottom: 16px; }
+  .price-amount { font-size: 2.1rem; font-weight: 600; color: var(--vein); line-height: 1; margin-bottom: 12px; }
+  .price-includes { font-size: 0.78rem; color: var(--tellis); line-height: 1.55; }
+
+  /* Booking widget */
+  .booking-section { background: var(--paper); padding: 56px 0; }
+  .booking-intro {
+   text-align: center;
+   margin-bottom: 28px;
+  }
+  .booking-note {
+   background: var(--roosa);
+   border-radius: 8px;
+   padding: 14px 20px;
+   font-size: 0.84rem;
+   color: var(--ink);
+   text-align: center;
+   margin-bottom: 20px;
+  }
+  .booking-note strong { color: var(--vein); }
+  .booking-widget-wrap {
+   background: var(--white);
+   border-radius: 12px;
+   border: 1px solid var(--kivi);
+   overflow: hidden;
+  }
+  .booking-widget-wrap iframe {
+   display: block;
+   width: 100%;
+   height: 620px;
+   border: none;
+  }
+
+  /* FAQ */
+  .faq-list {
+   max-width: 680px;
+   margin: 0 auto;
+  }
+  .faq-item {
+   background: var(--white);
+   border: 1px solid var(--kivi);
+   border-radius: 10px;
+   margin-bottom: 10px;
+   overflow: hidden;
+  }
+  .faq-item summary {
+   padding: 17px 20px;
+   font-weight: 600;
+   font-size: 0.88rem;
+   cursor: pointer;
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: var(--ink);
+   gap: 12px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-icon {
+   flex-shrink: 0;
+   width: 22px;
+   height: 22px;
+   border-radius: 50%;
+   background: var(--roosa);
+   color: var(--vein);
+   font-size: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 400;
+   line-height: 1;
+  }
+  .faq-item[open] .faq-icon::before { content: '-'; }
+  .faq-icon::before { content: '+'; }
+  .faq-body {
+   padding: 0 20px 18px;
+   font-size: 0.84rem;
+   color: var(--tellis);
+   line-height: 1.7;
+  }
+  .faq-body a { color: var(--vein); font-weight: 600; }
+
+  /* CTA bottom */
+  .cta-bottom {
+   background: var(--vein);
+   color: #ffffff;
+   padding: 56px 0;
+   text-align: center;
+  }
+  .cta-bottom h2 { font-size: 1.6rem; font-weight: 600; margin-bottom: 10px; }
+  .cta-bottom p { font-size: 0.95rem; opacity: 0.85; margin-bottom: 26px; }
+  .btn-white {
+   display: inline-block;
+   background: #ffffff;
+   color: var(--vein);
+   padding: 14px 36px;
+   border-radius: 6px;
+   font-weight: 600;
+   font-size: 0.95rem;
+   text-decoration: none;
+   transition: transform 0.18s;
+  }
+  .btn-white:hover { transform: translateY(-1px); text-decoration: none; }
+
+  /* Footer */
+  .site-footer {
+   background: var(--ink);
+   color: rgba(255,255,255,0.5);
+   padding: 32px 0;
+   font-size: 0.8rem;
+  }
+  .footer-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 24px;
+   flex-wrap: wrap;
+  }
+  .footer-col strong { color: #ffffff; display: block; margin-bottom: 6px; }
+  .footer-col a { color: rgba(255,255,255,0.7); }
+  .footer-col a:hover { color: #ffffff; text-decoration: underline; }
+  .footer-line { margin-bottom: 4px; }
+
+  /* Divider */
+  .divider { border: none; border-top: 1px solid var(--kivi); margin: 0; }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+   .header-phone { display: none; }
+   .hero { padding: 44px 0 36px; }
+   .usp-grid { grid-template-columns: repeat(2, 1fr); }
+   .exam-grid { grid-template-columns: repeat(3, 1fr); }
+   .bring-cols { grid-template-columns: 1fr; gap: 24px; }
+   .price-cards { grid-template-columns: 1fr; }
+   .footer-inner { flex-direction: column; gap: 16px; }
+   .booking-widget-wrap iframe { height: 520px; }
+  }
+  @media (max-width: 480px) {
+   .exam-grid { grid-template-columns: repeat(2, 1fr); }
+   .cat-table th, .cat-table td { padding: 10px 12px; font-size: 0.8rem; }
+  }
+ </style>
+</head>
+<body>
+
+<!-- Top info bar -->
+<div class="top-bar">
+ <span>Пн-Пт 9:00-18:00</span>
+ <span class="sep">·</span>
+ <span>Сб 12:00-16:00</span>
+ <span class="sep">·</span>
+ <span>Держ. свята 12:00-16:00</span>
+ <span class="sep">·</span>
+ <a href="tel:+37259110909">+372 5911 0909</a>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+ <div class="container">
+  <a href="https://valvekliinik.ee" class="logo-link">
+   <img src="https://valvekliinik.ee/wp-content/uploads/2021/08/vk-logo.svg" alt="Valvekliinik">
+  </a>
+  <nav class="header-nav">
+   <a href="tel:+37259110909" class="header-phone">+372 5911 0909</a>
+   <a href="#broneeri" class="btn-primary">Записатися на прийом</a>
+  </nav>
+ </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+ <div class="container">
+  <span class="overline">Того ж дня — також у суботу та у свята</span>
+  <h1>Медична довідка для водійських прав<br><em>швидко та зручно</em></h1>
+  <p class="lead">Медичний огляд та видача довідки під час одного короткого візиту. Довідка надходить до Транспортного департаменту автоматично*.</p>
+  <div class="hero-price-row">
+   <div class="hero-price">від 65 €</div>
+   <div class="hero-price-note">Категорії A, B, AM, T та їх підкатегорії</div>
+  </div>
+  <a href="#broneeri" class="btn-hero">Записатися на прийом</a>
+  <p class="hero-sub">Або телефонуйте <a href="tel:+37259110909">+372 5911 0909</a></p>
+ </div>
+</section>
+
+<!-- USP strip -->
+<div class="usp-strip">
+ <div class="container">
+  <div class="usp-grid">
+   <div class="usp-item">
+    <div class="usp-label" style="font-weight:600;">Приблизно 20-30 хвилин</div>
+   </div>
+   <div class="usp-item">
+    <div class="usp-icon">📅</div>
+    <div class="usp-label">Того ж дня</div>
+   </div>
+   <div class="usp-item">
+    <div class="usp-icon">📄</div>
+    <div class="usp-label">Без направлення</div>
+   </div>
+   <div class="usp-item">
+    <div class="usp-label" style="font-weight:600;">Ülemiste City, Таллінн</div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<!-- What is checked -->
+<section class="section section-white">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Медичний огляд</span>
+   <h2 class="section-title">Що перевіряється?</h2>
+   <p class="section-lead">Медичний огляд для водійських прав короткий та комплексний.</p>
+  </div>
+  <div class="exam-grid">
+   <div class="exam-card">
+    <div class="exam-icon">❤️</div>
+    <div class="exam-name">Артеріальний тиск</div>
+   </div>
+   <div class="exam-card">
+    <div class="exam-icon">👁️</div>
+    <div class="exam-name">Гострота зору</div>
+   </div>
+   <div class="exam-card">
+    <div class="exam-icon">⚖️</div>
+    <div class="exam-name">Індекс маси тіла (вага та зріст)</div>
+   </div>
+   <div class="exam-card">
+    <div class="exam-icon">📏</div>
+    <div class="exam-name">Обхват шиї</div>
+   </div>
+   <div class="exam-card">
+    <div class="exam-icon">🩸</div>
+    <div class="exam-name">Рівень цукру в крові</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<hr class="divider">
+
+<!-- Driving license categories -->
+<section class="section section-white">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Вимоги Транспортного департаменту</span>
+   <h2 class="section-title">Категорії та строки дії</h2>
+   <p class="section-lead">Строк дії довідки залежить від категорії водійських прав та вашого віку.</p>
+  </div>
+  <div class="cat-table-wrap">
+   <table class="cat-table">
+    <thead>
+     <tr>
+      <th>Категорія</th>
+      <th>Приклади</th>
+      <th>Строк дії (до 65 років)</th>
+      <th>Строк дії (65+ років)</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td><span class="cat-badge">I категорія</span></td>
+      <td>A, B, AM, T та підкатегорії</td>
+      <td>Кожні 10 років</td>
+      <td>Кожні 5 років</td>
+     </tr>
+     <tr>
+      <td><span class="cat-badge">II категорія</span></td>
+      <td>C, D, E та підкатегорії</td>
+      <td>Кожні 5 років</td>
+      <td>Кожні 5 років</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="notice-box">
+   Для водіїв старше 65 років медична довідка дійсна для всіх категорій протягом 5 років.
+   Додаткова інформація: <a href="https://transpordiamet.ee/tervisetoend-autojuhile" target="_blank" rel="noopener noreferrer">transpordiamet.ee/tervisetoend-autojuhile</a>
+  </div>
+ </div>
+</section>
+
+<!-- Steps -->
+<section class="section section-paper">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Як це відбувається</span>
+   <h2 class="section-title">Три кроки до довідки</h2>
+   <p class="section-lead">Процес простий та швидкий.</p>
+  </div>
+  <div class="steps-list">
+   <div class="step-row">
+    <div class="step-num">1</div>
+    <div class="step-body">
+     <span class="step-tag">Перед візитом</span>
+     <h3>Рекомендуємо заповнити декларацію про стан здоров'я</h3>
+     <p>Перейдіть на сторінку <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a> та заповніть декларацію про стан здоров'я за допомогою Smart-ID або ID-картки. Це перший крок для подачі заявки на електронну медичну довідку, який необхідно зробити до приходу на прийом.</p>
+    </div>
+   </div>
+   <div class="step-row">
+    <div class="step-num">2</div>
+    <div class="step-body">
+     <span class="step-tag">Візит</span>
+     <h3>Прийдіть на медичний огляд</h3>
+     <p>Медичний огляд триває приблизно 20-30 хвилин. Ми вимірюємо артеріальний тиск, гостроту зору, вагу, зріст, обхват шиї та рівень цукру в крові. Візьміть з собою документ, що посвідчує особу, та окуляри (якщо носите). Прийдіть натщесерце — не їжте щонайменше 2 години до прийому (вода дозволена).</p>
+    </div>
+   </div>
+   <div class="step-row">
+    <div class="step-num">3</div>
+    <div class="step-body">
+     <span class="step-tag">Довідка</span>
+     <h3>Довідка автоматично надходить до Транспортного департаменту</h3>
+     <p>Довідка видається в цифровому форматі та автоматично надходить до реєстру транспортних засобів. Паперовий документ не потрібен — все відбувається електронно. Довідка є дійсною відразу після видачі.</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- Bring + exam info -->
+<section class="section section-white">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Підготовка</span>
+   <h2 class="section-title">Що взяти з собою?</h2>
+  </div>
+  <div class="bring-cols">
+   <ul class="bring-list">
+    <li>
+     <span class="check-mark">✓</span>
+     <span>Документ, що посвідчує особу (ID-картка або паспорт)</span>
+    </li>
+    <li>
+     <span class="check-mark">✓</span>
+     <span>Окуляри або контактні лінзи, якщо ви їх носите — перевірка зору проводиться з ними</span>
+    </li>
+    <li>
+     <span class="check-mark">✓</span>
+     <span>Бажано заповнена декларація про стан здоров'я через <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a> (можна заповнити також на місці в клініці)</span>
+    </li>
+    <li>
+     <span class="check-mark">✓</span>
+     <span>Прийдіть натщесерце — не їжте щонайменше 2 години до прийому (вода дозволена)</span>
+    </li>
+   </ul>
+   <div class="info-panel">
+    <h3>Корисно знати</h3>
+    <p>Декларацію про стан здоров'я необхідно заповнити заздалегідь через <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a> (можна також заповнити на місці в клініці). Без заповненої декларації видача довідки неможлива.</p>
+    <p>Якщо під час медичного огляду не виявлено перешкод, довідка видається того ж дня.</p>
+    <p>Довідка надходить до Транспортного департаменту в цифровому форматі — паперовий документ або окреме подання не потрібне.</p>
+    <p>Додаткова інформація: <a href="https://transpordiamet.ee/tervisetoend-autojuhile" target="_blank" rel="noopener noreferrer">transpordiamet.ee</a></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- Pricing -->
+<section class="section section-paper">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Прейскурант</span>
+   <h2 class="section-title">Прозора ціна, без доплат</h2>
+   <p class="section-lead">Медичний огляд та видача довідки в одній ціні.</p>
+  </div>
+  <div class="price-cards">
+   <div class="price-card">
+    <h3>I категорія</h3>
+    <div class="cat-list">Категорії A, B, AM, T<br>та їх підкатегорії</div>
+    <div class="price-amount">65 €</div>
+    <div class="price-includes">
+     Медичний огляд + видача довідки.<br>
+     Звичайні права, мотоцикл, мопед, трактор.
+    </div>
+   </div>
+   <div class="price-card">
+    <h3>II категорія</h3>
+    <div class="cat-list">Категорії C, D, E<br>та їх підкатегорії</div>
+    <div class="price-amount">90 €</div>
+    <div class="price-includes">
+     Розширений медичний огляд + видача довідки.<br>
+     Вантажний автомобіль, автобус, причіп — професійні категорії.
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+  <p style="font-size:.85rem;color:var(--tellis);margin-top:2rem;margin-bottom:2rem;text-align:center;max-width:660px;margin-left:auto;margin-right:auto;line-height:1.6;">* Ціна довідки — це вартість консультації медичного огляду. Якщо стан здоров'я не дозволяє видати довідку, плата за консультацію не повертається. Довідка видається та передається до Транспортного департаменту лише в разі, якщо результати медичного огляду це дозволяють.</p>
+
+ <!-- Booking widget -->
+<section class="booking-section" id="broneeri">
+ <div class="container">
+  <div class="booking-intro">
+   <span class="overline"></span>
+   <h2 class="section-title" style="margin-bottom:8px;">Записатися на прийом</h2>
+   <p class="section-lead">Виберіть зручний час нижче. Для запису реєстрація не потрібна.</p>
+  </div>
+  <div class="booking-note">
+   Виберіть послугу: <strong>«Tervisekontroll mootorsõidukijuhi tervisetõendi taotlemiseks I kategooria»</strong> (кат. A/B/AM/T)
+   або <strong>«...II kategooria»</strong> (кат. C/D/E)
+  </div>
+  <div class="booking-widget-wrap">
+   <iframe
+    src="https://connectedserver.eu/ConnectedOnlineX/default.aspx?key=XxX0j1C0&lang=et"
+    title="Запишіться на медичний огляд"
+    allowfullscreen
+   ></iframe>
+  </div>
+  <p style="text-align:center; margin-top:16px; font-size:0.82rem; color:var(--kivi);">
+   Запитання? Телефонуйте <a href="tel:+37259110909" style="font-weight:600; color:var(--vein);">+372 5911 0909</a> або пишіть <a href="mailto:info@valvekliinik.ee" style="color:var(--vein);">info@valvekliinik.ee</a>
+  </p>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-white">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Часті запитання</span>
+   <h2 class="section-title">Відповіді на поширені запитання</h2>
+  </div>
+  <div class="faq-list">
+
+   <details class="faq-item">
+    <summary>
+     Чи можна отримати медичну довідку для водійських прав того ж дня?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Так. Якщо ви заздалегідь заповнили декларацію про стан здоров'я через <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a> (можна заповнити також на місці в клініці) і під час медичного огляду не виявлено перешкод, довідка видається того ж дня. Довідка надходить до Транспортного департаменту в цифровому форматі.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Чи потрібне направлення?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Ні, направлення не потрібне. Звертайтесь до нас напряму — запишіться онлайн або зателефонуйте +372 5911 0909.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Що таке декларація про стан здоров'я і де її заповнити?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Декларація про стан здоров'я є обов'язковим першим кроком для подання заявки на електронну медичну довідку. Заповніть її до візиту на сайті <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a> за допомогою Smart-ID або ID-картки. Без заповненої декларації видача медичної довідки неможлива.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Скільки часу займає медичний огляд для водійських прав?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Медичний огляд триває приблизно 20-30 хвилин. З урахуванням часу очікування плануйте на візит приблизно 30 хвилин.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Чи потрібно приходити натщесерце?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Так. Просимо не їсти щонайменше 2 години до прийому, оскільки ми вимірюємо рівень цукру в крові. Негазована вода дозволена.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Які документи потрібно взяти з собою?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Візьміть документ, що посвідчує особу (ID-картку або паспорт), а також окуляри або контактні лінзи, якщо ви їх носите. Перевірка зору проводиться з окулярами/лінзами.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Як часто потрібно оновлювати медичну довідку для водійських прав?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     I категорія (A, B, AM, T) — кожні 10 років (для осіб до 65 років). II категорія (C, D, E) — кожні 5 років. Водії старше 65 років повинні оновлювати довідку для всіх категорій кожні 5 років.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Чи можна пройти медичний огляд у суботу?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Так. Ми відкриті в суботу з 12:00 до 16:00, а також у державні свята з 12:00 до 16:00. З понеділка по п'ятницю ми відкриті з 9:00 до 18:00.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Куди надсилається довідка?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Довідка видається в цифровому форматі та автоматично надходить до реєстру транспортних засобів. Вам не потрібно нічого подавати окремо — все відбувається електронно відразу після видачі довідки.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Що відбувається, якщо під час медичного огляду виявляються проблеми?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Якщо під час медичного огляду з'ясується, що видача довідки неможлива, ми повідомимо вас про це. Повернення коштів за консультацію не здійснюється, оскільки медичний огляд був проведений. У такому випадку ми можемо проконсультувати вас щодо подальших кроків.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Чи можна оплатити банківською карткою?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Так, оплатити можна на місці як карткою, так і готівкою.
+    </div>
+   </details>
+
+  </div>
+ </div>
+</section>
+
+<!-- CTA bottom -->
+<section class="cta-bottom">
+ <div class="container">
+  <h2>Готові отримати медичну довідку для водійських прав?</h2>
+  <p>Запишіться на прийом та отримайте довідку вже сьогодні.</p>
+  <a href="#broneeri" class="btn-white">Записатися на прийом</a>
+ </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+ <div class="container">
+  <div class="footer-inner">
+   <div class="footer-col">
+    <strong>Valvekliinik OÜ</strong>
+    <div class="footer-line">Sepapaja 12/1, 3-й поверх</div>
+    <div class="footer-line">11415 Tallinn</div>
+    <div class="footer-line" style="margin-top:4px;">Ülemiste Tervisemaja 2 (von Baeri maja)</div>
+    <div class="footer-line">Ülemiste City</div>
+   </div>
+   <div class="footer-col">
+    <strong>Години роботи</strong>
+    <div class="footer-line">Пн-Пт 9:00-18:00</div>
+    <div class="footer-line">Сб 12:00-16:00</div>
+    <div class="footer-line">Держ. свята 12:00-16:00</div>
+    <div class="footer-line">Неділя — вихідний</div>
+   </div>
+   <div class="footer-col">
+    <strong>Контакти</strong>
+    <div class="footer-line"><a href="tel:+37259110909">+372 5911 0909</a></div>
+    <div class="footer-line"><a href="mailto:info@valvekliinik.ee">info@valvekliinik.ee</a></div>
+    <div class="footer-line" style="margin-top:4px;"><a href="https://valvekliinik.ee" target="_blank" rel="noopener noreferrer">valvekliinik.ee</a></div>
+    <div class="footer-line">Reg nr 11576944</div>
+   </div>
+  </div>
+ </div>
+</footer>
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "MedicalClinic",
+ "name": "Valvekliinik",
+ "url": "https://valvekliinik.ee",
+ "telephone": "+37259110909",
+ "email": "info@valvekliinik.ee",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Sepapaja 12/1, III korrus",
+  "addressLocality": "Tallinn",
+  "postalCode": "11415",
+  "addressCountry": "EE"
+ },
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+   "opens": "09:00",
+   "closes": "18:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "Saturday",
+   "opens": "12:00",
+   "closes": "16:00"
+  }
+ ],
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Послуги медичного огляду",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Медичний огляд для водійських прав I категорії",
+     "description": "Медична довідка водія механічного транспортного засобу для категорій A, B, AM, T та їх підкатегорій"
+    },
+    "price": "65",
+    "priceCurrency": "EUR"
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Медичний огляд для водійських прав II категорії",
+     "description": "Медична довідка водія механічного транспортного засобу для категорій C, D, E та їх підкатегорій"
+    },
+    "price": "90",
+    "priceCurrency": "EUR"
+   }
+  ]
+ }
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "name": "Медична довідка для водійських прав",
+ "alternateName": ["Медична довідка водія", "Медичний огляд для водійських прав", "Медична довідка водія механічного транспортного засобу"],
+ "description": "Електронна медична довідка для отримання та продовження водійських прав. Медичний огляд та видача довідки того ж дня, без направлення.",
+ "provider": {
+  "@type": "MedicalClinic",
+  "name": "Valvekliinik",
+  "url": "https://valvekliinik.ee"
+ },
+ "areaServed": {
+  "@type": "City",
+  "name": "Tallinn"
+ },
+ "offers": [
+  {
+   "@type": "Offer",
+   "name": "I категорія (A, B, AM, T)",
+   "price": "65",
+   "priceCurrency": "EUR"
+  },
+  {
+   "@type": "Offer",
+   "name": "II категорія (C, D, E)",
+   "price": "90",
+   "priceCurrency": "EUR"
+  }
+ ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Чи можна отримати медичну довідку для водійських прав того ж дня?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Так. Якщо ви заздалегідь заповнили декларацію про стан здоров'я через terviseportaal.ee і під час медичного огляду не виявлено перешкод, довідка видається того ж дня. Довідка надходить до Транспортного департаменту в цифровому форматі."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Чи потрібне направлення для медичного огляду водійських прав?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ні, направлення не потрібне. Запишіться безпосередньо у Valvekliinik онлайн або зателефонувавши +372 5911 0909."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Що таке декларація про стан здоров'я і де її заповнити?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Декларація про стан здоров'я є обов'язковим першим кроком для подання заявки на електронну медичну довідку. Заповніть її до візиту на сайті terviseportaal.ee за допомогою Smart-ID або ID-картки."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Скільки часу займає медичний огляд для водійських прав?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Медичний огляд триває приблизно 20-30 хвилин. З урахуванням часу очікування плануйте на візит приблизно 30 хвилин."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Чи потрібно приходити натщесерце на медичний огляд водійських прав?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Так. Просимо не їсти щонайменше 2 години до прийому, оскільки ми вимірюємо рівень цукру в крові. Негазована вода дозволена."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Як часто потрібно оновлювати медичну довідку для водійських прав?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "I категорія (A, B, AM, T) — кожні 10 років для осіб до 65 років. II категорія (C, D, E) — кожні 5 років. Водії старше 65 років повинні оновлювати довідку для всіх категорій кожні 5 років."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Куди надсилається медична довідка для водійських прав?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Довідка видається в цифровому форматі та автоматично надходить до реєстру транспортних засобів. Окреме подання не потрібне — все відбувається електронно."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Скільки коштує медичний огляд для водійських прав?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Медичний огляд для I категорії (A, B, AM, T) коштує 65 євро. Медичний огляд для II категорії (C, D, E) коштує 90 євро. Ціна включає медичний огляд та видачу довідки."
+   }
+  }
+ ]
+}
+</script>
+
+</body>
+</html>

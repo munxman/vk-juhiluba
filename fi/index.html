@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="robots" content="noindex,nofollow">
+ <title>Ajokortin terveystodistus samana päivänä | Valvekliinik Tallinn</title>
+ <meta name="description" content="Ajoneuvon kuljettajan terveystodistus Tallinnassa – samana päivänä, ilman lähetettä. Ajokortin terveystarkastus alkaen 65 €. Valvekliinik, Ülemiste City.">
+
+ <!-- Open Graph -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://valvekliinik.ee/juhiluba/">
+ <meta property="og:title" content="Ajokortin terveystodistus samana päivänä | Valvekliinik Tallinn">
+ <meta property="og:description" content="Ajoneuvon kuljettajan terveystodistus Tallinnassa samana päivänä. Alkaen 65 €. Ilman lähetettä. Varaa aika verkossa.">
+ <meta property="og:site_name" content="Valvekliinik">
+
+ <!-- Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+ <style>
+  :root {
+   --paper: #F4F1EA;
+   --vein: #5E262C;
+   --tellis: #98544E;
+   --roosa: #E6D3CE;
+   --kivi: #C4BBAE;
+   --ink: #1A1A1A;
+   --white: #FFFFFF;
+   --font: 'Poppins', system-ui, -apple-system, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 18px; scroll-behavior: smooth; }
+  body { font-family: var(--font); color: var(--ink); background: var(--paper); line-height: 1.65; }
+  a { color: var(--vein); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .container { max-width: 940px; margin: 0 auto; padding: 0 24px; }
+
+  /* Top bar */
+  .top-bar {
+   background: var(--ink);
+   color: rgba(255,255,255,0.6);
+   font-size: 0.76rem;
+   padding: 9px 0;
+   text-align: center;
+  }
+  .top-bar a { color: #ffffff; font-weight: 600; }
+  .top-bar .sep { margin: 0 8px; opacity: 0.35; }
+
+  /* Header */
+  .site-header {
+   background: var(--white);
+   border-bottom: 1px solid var(--kivi);
+   padding: 14px 0;
+   position: sticky;
+   top: 0;
+   z-index: 200;
+  }
+  .site-header .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 16px;
+  }
+  .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .logo-link img { height: 34px; display: block; }
+  .header-nav { display: flex; align-items: center; gap: 20px; }
+  .header-phone { font-weight: 600; font-size: 0.88rem; color: var(--ink); }
+  .btn-primary {
+   display: inline-block;
+   background: var(--vein);
+   color: #ffffff;
+   padding: 10px 24px;
+   border-radius: 6px;
+   font-weight: 600;
+   font-size: 0.85rem;
+   text-decoration: none;
+   transition: background 0.18s;
+   white-space: nowrap;
+  }
+  .btn-primary:hover { background: var(--tellis); text-decoration: none; }
+
+  /* Hero */
+  .hero {
+   background: var(--white);
+   padding: 68px 0 54px;
+   border-bottom: 1px solid var(--kivi);
+   text-align: center;
+  }
+  .overline {
+   display: inline-block;
+   font-size: 0.68rem;
+   font-weight: 600;
+   letter-spacing: 0.13em;
+   text-transform: uppercase;
+   color: var(--tellis);
+   margin-bottom: 18px;
+  }
+  .hero h1 {
+   font-size: clamp(1.85rem, 4.5vw, 2.75rem);
+   font-weight: 600;
+   line-height: 1.15;
+   margin-bottom: 18px;
+   letter-spacing: -0.02em;
+  }
+  .hero h1 em {
+   font-style: normal;
+   color: var(--vein);
+  }
+  .hero .lead {
+   font-size: 1.05rem;
+   color: var(--tellis);
+   max-width: 500px;
+   margin: 0 auto 30px;
+  }
+  .hero-price-row {
+   margin-bottom: 30px;
+  }
+  .hero-price {
+   font-size: 2.5rem;
+   font-weight: 600;
+   color: var(--ink);
+   line-height: 1;
+   margin-bottom: 6px;
+  }
+  .hero-price-note {
+   font-size: 0.82rem;
+   color: var(--kivi);
+  }
+  .btn-hero {
+   display: inline-block;
+   background: var(--vein);
+   color: #ffffff;
+   padding: 15px 42px;
+   border-radius: 6px;
+   font-weight: 600;
+   font-size: 1rem;
+   text-decoration: none;
+   transition: all 0.18s;
+  }
+  .btn-hero:hover { background: var(--tellis); transform: translateY(-1px); text-decoration: none; }
+  .hero-sub {
+   margin-top: 14px;
+   font-size: 0.82rem;
+   color: var(--kivi);
+  }
+  .hero-sub a { color: var(--vein); font-weight: 600; }
+
+  /* USP strip */
+  .usp-strip {
+   background: var(--ink);
+   padding: 20px 0;
+  }
+  .usp-grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 8px;
+   text-align: center;
+  }
+  .usp-item { padding: 8px; }
+  .usp-icon { font-size: 1.25rem; margin-bottom: 4px; }
+  .usp-label { font-size: 0.78rem; font-weight: 600; color: #ffffff; }
+
+  /* Generic section */
+  .section { padding: 56px 0; }
+  .section-white { background: var(--white); }
+  .section-paper { background: var(--paper); }
+  .section-title {
+   font-size: 1.55rem;
+   font-weight: 600;
+   letter-spacing: -0.02em;
+   margin-bottom: 10px;
+   text-align: center;
+  }
+  .section-lead {
+   text-align: center;
+   color: var(--tellis);
+   font-size: 0.9rem;
+   margin-bottom: 40px;
+  }
+  .section-head {
+   text-align: center;
+   margin-bottom: 40px;
+  }
+  .section-head .overline { display: block; }
+
+  /* Exam checks */
+  .exam-grid {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 14px;
+  }
+  .exam-card {
+   background: var(--white);
+   border: 1px solid var(--kivi);
+   border-radius: 10px;
+   padding: 20px 14px;
+   text-align: center;
+  }
+  .exam-card .exam-icon { font-size: 1.5rem; margin-bottom: 10px; }
+  .exam-card .exam-name { font-size: 0.8rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
+
+  /* Categories table */
+  .cat-table-wrap {
+   overflow-x: auto;
+   border-radius: 10px;
+   border: 1px solid var(--kivi);
+   background: var(--white);
+  }
+  .cat-table {
+   width: 100%;
+   border-collapse: collapse;
+   font-size: 0.88rem;
+  }
+  .cat-table th {
+   background: var(--vein);
+   color: #ffffff;
+   padding: 13px 18px;
+   text-align: left;
+   font-weight: 600;
+   font-size: 0.8rem;
+   letter-spacing: 0.04em;
+  }
+  .cat-table td {
+   padding: 13px 18px;
+   border-bottom: 1px solid var(--roosa);
+   color: var(--ink);
+  }
+  .cat-table tr:last-child td { border-bottom: none; }
+  .cat-table tr:nth-child(even) td { background: #faf8f4; }
+  .cat-badge {
+   display: inline-block;
+   background: var(--roosa);
+   color: var(--vein);
+   border-radius: 4px;
+   padding: 2px 8px;
+   font-size: 0.78rem;
+   font-weight: 600;
+  }
+  .notice-box {
+   background: var(--roosa);
+   border-left: 3px solid var(--tellis);
+   border-radius: 0 8px 8px 0;
+   padding: 14px 18px;
+   font-size: 0.85rem;
+   color: var(--ink);
+   margin-top: 16px;
+  }
+  .notice-box a { color: var(--vein); font-weight: 600; }
+
+  /* Steps */
+  .steps-list {
+   display: flex;
+   flex-direction: column;
+   gap: 0;
+   max-width: 640px;
+   margin: 0 auto;
+  }
+  .step-row {
+   display: flex;
+   gap: 20px;
+   align-items: flex-start;
+   position: relative;
+   padding-bottom: 30px;
+  }
+  .step-row:last-child { padding-bottom: 0; }
+  .step-row:not(:last-child)::after {
+   content: '';
+   position: absolute;
+   left: 20px;
+   top: 44px;
+   bottom: 0;
+   width: 2px;
+   background: var(--roosa);
+  }
+  .step-num {
+   flex-shrink: 0;
+   width: 42px;
+   height: 42px;
+   border-radius: 50%;
+   background: var(--vein);
+   color: #ffffff;
+   font-weight: 600;
+   font-size: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   z-index: 1;
+  }
+  .step-body { padding-top: 8px; }
+  .step-body h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; color: var(--ink); }
+  .step-body p { font-size: 0.85rem; color: var(--tellis); line-height: 1.6; }
+  .step-body a { color: var(--vein); font-weight: 600; }
+  .step-body .step-tag {
+   display: inline-block;
+   font-size: 0.72rem;
+   font-weight: 600;
+   background: var(--roosa);
+   color: var(--vein);
+   border-radius: 4px;
+   padding: 2px 8px;
+   margin-bottom: 8px;
+   text-transform: uppercase;
+   letter-spacing: 0.06em;
+  }
+
+  /* Bring list */
+  .bring-cols {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 40px;
+   align-items: start;
+  }
+  .bring-list {
+   list-style: none;
+  }
+  .bring-list li {
+   display: flex;
+   align-items: flex-start;
+   gap: 12px;
+   padding: 12px 0;
+   border-bottom: 1px solid var(--kivi);
+   font-size: 0.88rem;
+   color: var(--ink);
+  }
+  .bring-list li:last-child { border-bottom: none; }
+  .check-mark {
+   color: var(--vein);
+   font-weight: 600;
+   flex-shrink: 0;
+   line-height: 1.65;
+  }
+  .info-panel {
+   background: var(--roosa);
+   border-radius: 12px;
+   padding: 26px 22px;
+  }
+  .info-panel h3 {
+   font-size: 0.95rem;
+   font-weight: 600;
+   margin-bottom: 14px;
+   color: var(--ink);
+  }
+  .info-panel p {
+   font-size: 0.85rem;
+   color: var(--tellis);
+   margin-bottom: 10px;
+   line-height: 1.6;
+  }
+  .info-panel p:last-child { margin-bottom: 0; }
+  .info-panel a { color: var(--vein); font-weight: 600; }
+
+  /* Pricing */
+  .price-cards {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px;
+   max-width: 640px;
+   margin: 0 auto;
+  }
+  .price-card {
+   background: var(--white);
+   border: 2px solid var(--kivi);
+   border-radius: 12px;
+   padding: 30px 22px;
+   text-align: center;
+   transition: border-color 0.18s;
+  }
+  .price-card:hover { border-color: var(--vein); }
+  .price-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+  .price-card .cat-list { font-size: 0.8rem; color: var(--kivi); margin-bottom: 16px; }
+  .price-amount { font-size: 2.1rem; font-weight: 600; color: var(--vein); line-height: 1; margin-bottom: 12px; }
+  .price-includes { font-size: 0.78rem; color: var(--tellis); line-height: 1.55; }
+
+  /* Booking widget */
+  .booking-section { background: var(--paper); padding: 56px 0; }
+  .booking-intro {
+   text-align: center;
+   margin-bottom: 28px;
+  }
+  .booking-note {
+   background: var(--roosa);
+   border-radius: 8px;
+   padding: 14px 20px;
+   font-size: 0.84rem;
+   color: var(--ink);
+   text-align: center;
+   margin-bottom: 20px;
+  }
+  .booking-note strong { color: var(--vein); }
+  .booking-widget-wrap {
+   background: var(--white);
+   border-radius: 12px;
+   border: 1px solid var(--kivi);
+   overflow: hidden;
+  }
+  .booking-widget-wrap iframe {
+   display: block;
+   width: 100%;
+   height: 620px;
+   border: none;
+  }
+
+  /* FAQ */
+  .faq-list {
+   max-width: 680px;
+   margin: 0 auto;
+  }
+  .faq-item {
+   background: var(--white);
+   border: 1px solid var(--kivi);
+   border-radius: 10px;
+   margin-bottom: 10px;
+   overflow: hidden;
+  }
+  .faq-item summary {
+   padding: 17px 20px;
+   font-weight: 600;
+   font-size: 0.88rem;
+   cursor: pointer;
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: var(--ink);
+   gap: 12px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-icon {
+   flex-shrink: 0;
+   width: 22px;
+   height: 22px;
+   border-radius: 50%;
+   background: var(--roosa);
+   color: var(--vein);
+   font-size: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 400;
+   line-height: 1;
+  }
+  .faq-item[open] .faq-icon::before { content: '-'; }
+  .faq-icon::before { content: '+'; }
+  .faq-body {
+   padding: 0 20px 18px;
+   font-size: 0.84rem;
+   color: var(--tellis);
+   line-height: 1.7;
+  }
+  .faq-body a { color: var(--vein); font-weight: 600; }
+
+  /* CTA bottom */
+  .cta-bottom {
+   background: var(--vein);
+   color: #ffffff;
+   padding: 56px 0;
+   text-align: center;
+  }
+  .cta-bottom h2 { font-size: 1.6rem; font-weight: 600; margin-bottom: 10px; }
+  .cta-bottom p { font-size: 0.95rem; opacity: 0.85; margin-bottom: 26px; }
+  .btn-white {
+   display: inline-block;
+   background: #ffffff;
+   color: var(--vein);
+   padding: 14px 36px;
+   border-radius: 6px;
+   font-weight: 600;
+   font-size: 0.95rem;
+   text-decoration: none;
+   transition: transform 0.18s;
+  }
+  .btn-white:hover { transform: translateY(-1px); text-decoration: none; }
+
+  /* Footer */
+  .site-footer {
+   background: var(--ink);
+   color: rgba(255,255,255,0.5);
+   padding: 32px 0;
+   font-size: 0.8rem;
+  }
+  .footer-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 24px;
+   flex-wrap: wrap;
+  }
+  .footer-col strong { color: #ffffff; display: block; margin-bottom: 6px; }
+  .footer-col a { color: rgba(255,255,255,0.7); }
+  .footer-col a:hover { color: #ffffff; text-decoration: underline; }
+  .footer-line { margin-bottom: 4px; }
+
+  /* Divider */
+  .divider { border: none; border-top: 1px solid var(--kivi); margin: 0; }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+   .header-phone { display: none; }
+   .hero { padding: 44px 0 36px; }
+   .usp-grid { grid-template-columns: repeat(2, 1fr); }
+   .exam-grid { grid-template-columns: repeat(3, 1fr); }
+   .bring-cols { grid-template-columns: 1fr; gap: 24px; }
+   .price-cards { grid-template-columns: 1fr; }
+   .footer-inner { flex-direction: column; gap: 16px; }
+   .booking-widget-wrap iframe { height: 520px; }
+  }
+  @media (max-width: 480px) {
+   .exam-grid { grid-template-columns: repeat(2, 1fr); }
+   .cat-table th, .cat-table td { padding: 10px 12px; font-size: 0.8rem; }
+  }
+ </style>
+</head>
+<body>
+
+<!-- Top info bar -->
+<div class="top-bar">
+ <span>Ma–Pe 9:00–18:00</span>
+ <span class="sep">·</span>
+ <span>La 12:00–16:00</span>
+ <span class="sep">·</span>
+ <span>Pyhäpäivinä 12:00–16:00</span>
+ <span class="sep">·</span>
+ <a href="tel:+37259110909">+372 5911 0909</a>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+ <div class="container">
+  <a href="https://valvekliinik.ee" class="logo-link">
+   <img src="https://valvekliinik.ee/wp-content/uploads/2021/08/vk-logo.svg" alt="Valvekliinik">
+  </a>
+  <nav class="header-nav">
+   <a href="tel:+37259110909" class="header-phone">+372 5911 0909</a>
+   <a href="#broneeri" class="btn-primary">Varaa aika</a>
+  </nav>
+ </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+ <div class="container">
+  <span class="overline">Samana päivänä – myös lauantaisin ja pyhäpäivinä</span>
+  <h1>Ajokortin terveystodistus<br><em>nopeasti ja kätevästi</em></h1>
+  <p class="lead">Terveystarkastus ja todistuksen myöntäminen yhdellä lyhyellä käynnillä. Todistus toimitetaan automaattisesti liikennerekisteriin*.</p>
+  <div class="hero-price-row">
+   <div class="hero-price">alkaen 65 €</div>
+   <div class="hero-price-note">Luokat A, B, AM, T ja niiden alaluokat</div>
+  </div>
+  <a href="#broneeri" class="btn-hero">Varaa aika</a>
+  <p class="hero-sub">Tai soita <a href="tel:+37259110909">+372 5911 0909</a></p>
+ </div>
+</section>
+
+<!-- USP strip -->
+<div class="usp-strip">
+ <div class="container">
+  <div class="usp-grid">
+   <div class="usp-item">
+    <div class="usp-label" style="font-weight:600;">Noin 20–30 minuuttia</div>
+   </div>
+   <div class="usp-item">
+    <div class="usp-icon">📅</div>
+    <div class="usp-label">Samana päivänä</div>
+   </div>
+   <div class="usp-item">
+    <div class="usp-icon">📄</div>
+    <div class="usp-label">Ilman lähetettä</div>
+   </div>
+   <div class="usp-item">
+    <div class="usp-label" style="font-weight:600;">Ülemiste City, Tallinn</div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<!-- What is checked -->
+<section class="section section-white">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Terveystarkastus</span>
+   <h2 class="section-title">Mitä tarkastetaan?</h2>
+   <p class="section-lead">Ajokortin terveystarkastus on lyhyt ja kattava.</p>
+  </div>
+  <div class="exam-grid">
+   <div class="exam-card">
+    <div class="exam-icon">❤️</div>
+    <div class="exam-name">Verenpaine</div>
+   </div>
+   <div class="exam-card">
+    <div class="exam-icon">👁️</div>
+    <div class="exam-name">Näkö</div>
+   </div>
+   <div class="exam-card">
+    <div class="exam-icon">⚖️</div>
+    <div class="exam-name">Painoindeksi (paino ja pituus)</div>
+   </div>
+   <div class="exam-card">
+    <div class="exam-icon">📏</div>
+    <div class="exam-name">Kaulan ympärysmitta</div>
+   </div>
+   <div class="exam-card">
+    <div class="exam-icon">🩸</div>
+    <div class="exam-name">Verensokeri</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<hr class="divider">
+
+<!-- Driving license categories -->
+<section class="section section-white">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Transpordiametin vaatimukset</span>
+   <h2 class="section-title">Luokat ja voimassaoloajat</h2>
+   <p class="section-lead">Todistuksen voimassaoloaika riippuu ajokortin luokasta ja iästänne.</p>
+  </div>
+  <div class="cat-table-wrap">
+   <table class="cat-table">
+    <thead>
+     <tr>
+      <th>Luokka</th>
+      <th>Esimerkit</th>
+      <th>Voimassaolo (alle 65-vuotiaat)</th>
+      <th>Voimassaolo (65+ vuotta)</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td><span class="cat-badge">I luokka</span></td>
+      <td>A, B, AM, T ja alaluokat</td>
+      <td>10 vuoden välein</td>
+      <td>5 vuoden välein</td>
+     </tr>
+     <tr>
+      <td><span class="cat-badge">II luokka</span></td>
+      <td>C, D, E ja alaluokat</td>
+      <td>5 vuoden välein</td>
+      <td>5 vuoden välein</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="notice-box">
+   Yli 65-vuotiailla kuljettajilla terveystodistus on voimassa kaikissa luokissa 5 vuotta.
+   Lisätietoja: <a href="https://transpordiamet.ee/tervisetoend-autojuhile" target="_blank" rel="noopener noreferrer">transpordiamet.ee/tervisetoend-autojuhile</a>
+  </div>
+ </div>
+</section>
+
+<!-- Steps -->
+<section class="section section-paper">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Näin se toimii</span>
+   <h2 class="section-title">Kolme askelta todistukseen</h2>
+   <p class="section-lead">Prosessi on yksinkertainen ja nopea.</p>
+  </div>
+  <div class="steps-list">
+   <div class="step-row">
+    <div class="step-num">1</div>
+    <div class="step-body">
+     <span class="step-tag">Ennen käyntiä</span>
+     <h3>Suosittelemme täyttämään terveysilmoituksen</h3>
+     <p>Siirry <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a>-sivulle ja täytä terveysilmoitus Smart-ID:llä tai henkilökortilla. Tämä on sähköisen terveystodistuksen hakemisen ensimmäinen vaihe ja se on tehtävä ennen vastaanotolle tuloa.</p>
+    </div>
+   </div>
+   <div class="step-row">
+    <div class="step-num">2</div>
+    <div class="step-body">
+     <span class="step-tag">Käynti</span>
+     <h3>Tule terveystarkastukseen</h3>
+     <p>Terveystarkastus kestää noin 20–30 minuuttia. Mittaamme verenpaineen, näön, painon, pituuden, kaulan ympärysmitan ja verensokerin. Ota mukaan henkilöllisyystodistus ja silmälasit (jos käytät). Tule tyhjällä vatsalla – syömättä vähintään 2 tuntia ennen käyntiä (vesi sallittu).</p>
+    </div>
+   </div>
+   <div class="step-row">
+    <div class="step-num">3</div>
+    <div class="step-body">
+     <span class="step-tag">Todistus</span>
+     <h3>Todistus toimitetaan automaattisesti Transpordiametiin</h3>
+     <p>Todistus myönnetään digitaalisesti ja toimitetaan automaattisesti liikennerekisteriin. Paperitodistusta ei tarvita – kaikki tapahtuu sähköisesti. Todistus on voimassa heti myöntämisen jälkeen.</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- Bring + exam info -->
+<section class="section section-white">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Valmistautuminen</span>
+   <h2 class="section-title">Mitä ottaa mukaan?</h2>
+  </div>
+  <div class="bring-cols">
+   <ul class="bring-list">
+    <li>
+     <span class="check-mark">✓</span>
+     <span>Henkilöllisyystodistus (henkilökortti tai passi)</span>
+    </li>
+    <li>
+     <span class="check-mark">✓</span>
+     <span>Silmälasit tai piilolinssit, jos käytät – näkötarkastus tehdään niiden kanssa</span>
+    </li>
+    <li>
+     <span class="check-mark">✓</span>
+     <span>Mieluiten täytetty terveysilmoitus <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a>:n kautta (voidaan täyttää myös klinikalla paikan päällä)</span>
+    </li>
+    <li>
+     <span class="check-mark">✓</span>
+     <span>Tule tyhjällä vatsalla – älä syö vähintään 2 tuntia ennen vastaanottoa (vesi sallittu)</span>
+    </li>
+   </ul>
+   <div class="info-panel">
+    <h3>Hyödyllistä tietää</h3>
+    <p>Terveysilmoitus on täytettävä etukäteen <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a>:n kautta (voidaan täyttää myös klinikalla paikan päällä). Todistusta ei voida myöntää ilman täytettyä ilmoitusta.</p>
+    <p>Jos terveystarkastuksen aikana ei ilmene estäviä terveysongelmia, todistus myönnetään samana päivänä.</p>
+    <p>Todistus toimitetaan Transpordiametiin digitaalisesti – paperitodistusta tai erillistä toimittamista ei tarvita.</p>
+    <p>Lisätietoja: <a href="https://transpordiamet.ee/tervisetoend-autojuhile" target="_blank" rel="noopener noreferrer">transpordiamet.ee</a></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- Pricing -->
+<section class="section section-paper">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Hinnasto</span>
+   <h2 class="section-title">Selkeä hinta, ei lisämaksuja</h2>
+   <p class="section-lead">Terveystarkastus ja todistuksen myöntäminen yhdessä hinnassa.</p>
+  </div>
+  <div class="price-cards">
+   <div class="price-card">
+    <h3>I luokka</h3>
+    <div class="cat-list">Luokat A, B, AM, T<br>ja niiden alaluokat</div>
+    <div class="price-amount">65 €</div>
+    <div class="price-includes">
+     Terveystarkastus + todistuksen myöntäminen.<br>
+     Tavallinen ajokortti, moottoripyörä, mopo, traktori.
+    </div>
+   </div>
+   <div class="price-card">
+    <h3>II luokka</h3>
+    <div class="cat-list">Luokat C, D, E<br>ja niiden alaluokat</div>
+    <div class="price-amount">90 €</div>
+    <div class="price-includes">
+     Laajennettu terveystarkastus + todistuksen myöntäminen.<br>
+     Kuorma-auto, linja-auto, perävaunu – ammattimaiset ajokorttiluokat.
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+  <p style="font-size:.85rem;color:var(--tellis);margin-top:2rem;margin-bottom:2rem;text-align:center;max-width:660px;margin-left:auto;margin-right:auto;line-height:1.6;">* Todistuksen hinta on terveystarkastuksen konsultaatiopalkkio. Jos terveydentila ei mahdollista todistuksen myöntämistä, konsultaatiopalkkiota ei palauteta. Todistus myönnetään ja toimitetaan Transpordiametiin vain, jos terveystarkastuksen tulokset sen sallivat.</p>
+
+ <!-- Booking widget -->
+<section class="booking-section" id="broneeri">
+ <div class="container">
+  <div class="booking-intro">
+   <span class="overline"></span>
+   <h2 class="section-title" style="margin-bottom:8px;">Varaa aika</h2>
+   <p class="section-lead">Valitse sopiva aika alta. Varaamiseen ei tarvitse rekisteröityä.</p>
+  </div>
+  <div class="booking-note">
+   Valitse palvelu: <strong>"Tervisekontroll mootorsõidukijuhi tervisetõendi taotlemiseks I kategooria"</strong> (luok. A/B/AM/T)
+   tai <strong>"...II kategooria"</strong> (luok. C/D/E)
+  </div>
+  <div class="booking-widget-wrap">
+   <iframe
+    src="https://connectedserver.eu/ConnectedOnlineX/default.aspx?key=XxX0j1C0&lang=fi"
+    title="Varaa terveystarkastusaika"
+    allowfullscreen
+   ></iframe>
+  </div>
+  <p style="text-align:center; margin-top:16px; font-size:0.82rem; color:var(--kivi);">
+   Kysymyksiä? Soita <a href="tel:+37259110909" style="font-weight:600; color:var(--vein);">+372 5911 0909</a> tai kirjoita <a href="mailto:info@valvekliinik.ee" style="color:var(--vein);">info@valvekliinik.ee</a>
+  </p>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-white">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Usein kysytyt kysymykset</span>
+   <h2 class="section-title">Vastaukset yleisimpiin kysymyksiin</h2>
+  </div>
+  <div class="faq-list">
+
+   <details class="faq-item">
+    <summary>
+     Saako ajokortin terveystodistuksen samana päivänä?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Kyllä. Jos täytit terveysilmoituksen etukäteen <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a>:n kautta (voidaan täyttää myös klinikalla paikan päällä) eikä terveystarkastuksessa ilmene esteitä, todistus myönnetään samana päivänä. Todistus toimitetaan Transpordiametiin digitaalisesti.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Tarvitaanko lähete?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Ei tarvita. Ota suoraan yhteyttä meihin – varaa aika verkossa tai soita +372 5911 0909.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Mikä on terveysilmoitus ja mistä se täytetään?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Terveysilmoitus on sähköisen terveystodistuksen pakollinen ensimmäinen vaihe. Täytä se ennen käyntiä <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a>-sivulla Smart-ID:llä tai henkilökortilla. Todistusta ei voida myöntää ilman täytettyä ilmoitusta.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Kuinka kauan ajokortin terveystarkastus kestää?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Terveystarkastus kestää noin 20–30 minuuttia. Varaa käynnille odotusaika mukaan lukien noin 30 minuuttia.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Pitääkö tulla tyhjällä vatsalla?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Kyllä. Pyydämme olemaan syömättä vähintään 2 tuntia ennen vastaanottoa, koska mittaamme verensokerin. Kivennäisvesi on sallittu.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Mitä asiakirjoja tarvitaan?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Ota mukaan henkilöllisyystodistus (henkilökortti tai passi) sekä silmälasit tai piilolinssit, jos käytät niitä tavallisesti. Näkötarkastus tehdään lasien tai linssien kanssa.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Kuinka usein ajokortin terveystodistus on uusittava?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     I luokka (A, B, AM, T) – 10 vuoden välein (alle 65-vuotiaat). II luokka (C, D, E) – 5 vuoden välein. Yli 65-vuotiaiden kuljettajien on uusittava todistus kaikissa luokissa 5 vuoden välein.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Voiko terveystarkastuksen tehdä lauantaina?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Kyllä. Olemme auki lauantaisin klo 12:00–16:00 sekä pyhäpäivinä klo 12:00–16:00. Maanantaista perjantaihin olemme auki 9:00–18:00.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Minne todistus lähetetään?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Todistus myönnetään digitaalisesti ja toimitetaan automaattisesti liikennerekisteriin. Sinun ei tarvitse toimittaa mitään erikseen – kaikki tapahtuu sähköisesti heti todistuksen myöntämisen jälkeen.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Mitä tapahtuu, jos terveystarkastuksessa havaitaan ongelmia?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Jos terveystarkastuksessa ilmenee, että todistuksen myöntäminen ei ole mahdollista, ilmoitamme siitä teille. Konsultaatiopalkkiota ei palauteta, koska terveystarkastus on suoritettu. Tässä tapauksessa voimme neuvoa teitä seuraavien askelten suhteen.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Voiko maksaa pankkikortilla?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Kyllä, voit maksaa paikan päällä sekä kortilla että käteisellä.
+    </div>
+   </details>
+
+  </div>
+ </div>
+</section>
+
+<!-- CTA bottom -->
+<section class="cta-bottom">
+ <div class="container">
+  <h2>Valmis saamaan ajokortin terveystodistuksen?</h2>
+  <p>Varaa aika ja hanki todistus jo tänään.</p>
+  <a href="#broneeri" class="btn-white">Varaa aika</a>
+ </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+ <div class="container">
+  <div class="footer-inner">
+   <div class="footer-col">
+    <strong>Valvekliinik OÜ</strong>
+    <div class="footer-line">Sepapaja 12/1, III kerros</div>
+    <div class="footer-line">11415 Tallinn</div>
+    <div class="footer-line" style="margin-top:4px;">Ülemiste Tervisemaja 2 (von Baeri maja)</div>
+    <div class="footer-line">Ülemiste City</div>
+   </div>
+   <div class="footer-col">
+    <strong>Aukioloajat</strong>
+    <div class="footer-line">Ma–Pe 9:00–18:00</div>
+    <div class="footer-line">La 12:00–16:00</div>
+    <div class="footer-line">Pyhäpäivinä 12:00–16:00</div>
+    <div class="footer-line">Sunnuntaina suljettu</div>
+   </div>
+   <div class="footer-col">
+    <strong>Yhteystiedot</strong>
+    <div class="footer-line"><a href="tel:+37259110909">+372 5911 0909</a></div>
+    <div class="footer-line"><a href="mailto:info@valvekliinik.ee">info@valvekliinik.ee</a></div>
+    <div class="footer-line" style="margin-top:4px;"><a href="https://valvekliinik.ee" target="_blank" rel="noopener noreferrer">valvekliinik.ee</a></div>
+    <div class="footer-line">Reg nr 11576944</div>
+   </div>
+  </div>
+ </div>
+</footer>
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "MedicalClinic",
+ "name": "Valvekliinik",
+ "url": "https://valvekliinik.ee",
+ "telephone": "+37259110909",
+ "email": "info@valvekliinik.ee",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Sepapaja 12/1, III korrus",
+  "addressLocality": "Tallinn",
+  "postalCode": "11415",
+  "addressCountry": "EE"
+ },
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+   "opens": "09:00",
+   "closes": "18:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "Saturday",
+   "opens": "12:00",
+   "closes": "16:00"
+  }
+ ],
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Terveystarkastuspalvelut",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Ajokortin terveystarkastus I luokka",
+     "description": "Ajoneuvon kuljettajan terveystodistus luokille A, B, AM, T ja niiden alaluokat"
+    },
+    "price": "65",
+    "priceCurrency": "EUR"
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Ajokortin terveystarkastus II luokka",
+     "description": "Ajoneuvon kuljettajan terveystodistus luokille C, D, E ja niiden alaluokat"
+    },
+    "price": "90",
+    "priceCurrency": "EUR"
+   }
+  ]
+ }
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "name": "Ajokortin terveystodistus",
+ "alternateName": ["Ajoneuvon kuljettajan terveystodistus", "Ajokortin terveystarkastus", "Mootoriajoneuvokuljettajan terveystodistus"],
+ "description": "Sähköinen terveystodistus ajokortin hakemiseen ja uusimiseen. Terveystarkastus ja todistuksen myöntäminen samana päivänä, ilman lähetettä.",
+ "provider": {
+  "@type": "MedicalClinic",
+  "name": "Valvekliinik",
+  "url": "https://valvekliinik.ee"
+ },
+ "areaServed": {
+  "@type": "City",
+  "name": "Tallinn"
+ },
+ "offers": [
+  {
+   "@type": "Offer",
+   "name": "I luokka (A, B, AM, T)",
+   "price": "65",
+   "priceCurrency": "EUR"
+  },
+  {
+   "@type": "Offer",
+   "name": "II luokka (C, D, E)",
+   "price": "90",
+   "priceCurrency": "EUR"
+  }
+ ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Saako ajokortin terveystodistuksen samana päivänä?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Kyllä. Jos täytit terveysilmoituksen etukäteen terviseportaal.ee:n kautta eikä terveystarkastuksessa ilmene esteitä, todistus myönnetään samana päivänä. Todistus toimitetaan Transpordiametiin digitaalisesti."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Tarvitaanko ajokortin terveystarkastukseen lähete?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ei tarvita. Varaa aika suoraan Valvekliinikkiin verkossa tai soittamalla +372 5911 0909."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Mikä on terveysilmoitus ja mistä se täytetään?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Terveysilmoitus on sähköisen terveystodistuksen pakollinen ensimmäinen vaihe. Täytä se ennen käyntiä terviseportaal.ee-sivulla Smart-ID:llä tai henkilökortilla."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kuinka kauan ajokortin terveystarkastus kestää?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Terveystarkastus kestää noin 20–30 minuuttia. Varaa käynnille odotusaika mukaan lukien noin 30 minuuttia."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Pitääkö ajokortin terveystarkastukseen tulla tyhjällä vatsalla?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Kyllä. Pyydämme olemaan syömättä vähintään 2 tuntia ennen vastaanottoa, koska mittaamme verensokerin. Kivennäisvesi on sallittu."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kuinka usein ajokortin terveystodistus on uusittava?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "I luokka (A, B, AM, T) – 10 vuoden välein alle 65-vuotiaille. II luokka (C, D, E) – 5 vuoden välein. Yli 65-vuotiaiden kuljettajien on uusittava todistus kaikissa luokissa 5 vuoden välein."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Minne ajokortin terveystodistus lähetetään?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Todistus myönnetään digitaalisesti ja toimitetaan automaattisesti liikennerekisteriin. Erillistä toimittamista ei tarvita – kaikki tapahtuu sähköisesti."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Paljonko ajokortin terveystarkastus maksaa?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "I luokan (A, B, AM, T) terveystarkastus maksaa 65 euroa. II luokan (C, D, E) terveystarkastus maksaa 90 euroa. Hinta sisältää terveystarkastuksen ja todistuksen myöntämisen."
+   }
+  }
+ ]
+}
+</script>
+
+</body>
+</html>
