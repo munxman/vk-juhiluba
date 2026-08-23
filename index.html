@@ -4,301 +4,514 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta name="robots" content="noindex,nofollow">
- <title>Juhiloa tervisetõend samal päeval | Valvekliinik</title>
- <meta name="description" content="Juhiloa tervisetõend Tallinnas samal päeval. Alates 65 €. Ilma saatekirjata, ilma järjekorrrata. Valvekliinik, Ülemiste.">
- <meta property="og:title" content="Juhiloa tervisetõend samal päeval | Valvekliinik">
- <meta property="og:description" content="Juhiloa tervisetõend Tallinnas samal päeval. Alates 65 €. Broneerige aeg veebis.">
+ <title>Juhiloa tervisetõend samal päeval | Valvekliinik Tallinn</title>
+ <meta name="description" content="Autojuhi tervisetõend Tallinnas - samal päeval, ilma saatekirjata. Juhiloa tervisekontroll alates 65 €. Valvekliinik, Ülemiste City.">
+
+ <!-- Open Graph -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://valvekliinik.ee/juhiluba/">
+ <meta property="og:title" content="Juhiloa tervisetõend samal päeval | Valvekliinik Tallinn">
+ <meta property="og:description" content="Autojuhi tervisetõend Tallinnas samal päeval. Alates 65 €. Ilma saatekirjata. Broneerige aeg veebis.">
+ <meta property="og:site_name" content="Valvekliinik">
+
+ <!-- Fonts -->
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
  <style>
   :root {
-   --vk-green: #16A34A;
-   --vk-green-dark: #15803D;
-   --vk-black: #111827;
-   --vk-gray: #6B7280;
-   --vk-light: #F9FAFB;
-   --vk-border: #E5E7EB;
-   --vk-white: #FFFFFF;
-   --font: 'Inter', system-ui, -apple-system, sans-serif;
+   --paper: #F4F1EA;
+   --vein: #5E262C;
+   --tellis: #98544E;
+   --roosa: #E6D3CE;
+   --kivi: #C4BBAE;
+   --ink: #1A1A1A;
+   --white: #FFFFFF;
+   --font: 'Poppins', system-ui, -apple-system, sans-serif;
   }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { font-size: 17px; scroll-behavior: smooth; }
-  body { font-family: var(--font); color: var(--vk-black); background: var(--vk-white); line-height: 1.6; }
-  a { color: var(--vk-green-dark); text-decoration: none; }
+  html { font-size: 16px; scroll-behavior: smooth; }
+  body { font-family: var(--font); color: var(--ink); background: var(--paper); line-height: 1.65; }
+  a { color: var(--vein); text-decoration: none; }
   a:hover { text-decoration: underline; }
+
+  .container { max-width: 940px; margin: 0 auto; padding: 0 24px; }
 
   /* Top bar */
   .top-bar {
-   background: var(--vk-black);
-   color: rgba(255,255,255,.7);
-   font-size: .8rem;
-   padding: 8px 0;
+   background: var(--ink);
+   color: rgba(255,255,255,0.6);
+   font-size: 0.76rem;
+   padding: 9px 0;
    text-align: center;
   }
-  .top-bar a { color: #fff; font-weight: 600; }
+  .top-bar a { color: #ffffff; font-weight: 600; }
+  .top-bar .sep { margin: 0 8px; opacity: 0.35; }
 
   /* Header */
-  .header {
-   background: var(--vk-white);
-   border-bottom: 1px solid var(--vk-border);
-   padding: 16px 0;
+  .site-header {
+   background: var(--white);
+   border-bottom: 1px solid var(--kivi);
+   padding: 14px 0;
    position: sticky;
    top: 0;
-   z-index: 100;
+   z-index: 200;
   }
-  .header .container {
+  .site-header .container {
    display: flex;
    align-items: center;
    justify-content: space-between;
+   gap: 16px;
   }
-  .logo { font-size: 1.4rem; font-weight: 800; color: var(--vk-black); text-decoration: none; }
-  .logo span { color: var(--vk-green); }
-  .header-right { display: flex; align-items: center; gap: 1.5rem; }
-  .header-phone { font-weight: 700; font-size: .95rem; color: var(--vk-black); }
-  .header-cta {
-   background: var(--vk-green);
-   color: #fff;
+  .logo-link { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .logo-link img { height: 34px; display: block; }
+  .header-nav { display: flex; align-items: center; gap: 20px; }
+  .header-phone { font-weight: 600; font-size: 0.88rem; color: var(--ink); }
+  .btn-primary {
+   display: inline-block;
+   background: var(--vein);
+   color: #ffffff;
    padding: 10px 24px;
-   border-radius: 8px;
-   font-weight: 700;
-   font-size: .9rem;
+   border-radius: 6px;
+   font-weight: 600;
+   font-size: 0.85rem;
    text-decoration: none;
-   transition: background .2s;
+   transition: background 0.18s;
+   white-space: nowrap;
   }
-  .header-cta:hover { background: var(--vk-green-dark); text-decoration: none; }
-
-  .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+  .btn-primary:hover { background: var(--tellis); text-decoration: none; }
 
   /* Hero */
   .hero {
-   background: linear-gradient(135deg, #F0FDF4 0%, #ECFDF5 50%, #F9FAFB 100%);
-   padding: 80px 0 60px;
+   background: var(--white);
+   padding: 68px 0 54px;
+   border-bottom: 1px solid var(--kivi);
    text-align: center;
   }
-  .hero-badge {
+  .overline {
    display: inline-block;
-   background: var(--vk-green);
-   color: #fff;
-   font-size: .75rem;
-   font-weight: 700;
-   letter-spacing: .08em;
+   font-size: 0.68rem;
+   font-weight: 600;
+   letter-spacing: 0.13em;
    text-transform: uppercase;
-   padding: 6px 16px;
-   border-radius: 20px;
-   margin-bottom: 24px;
+   color: var(--tellis);
+   margin-bottom: 18px;
   }
   .hero h1 {
-   font-size: clamp(2rem, 5vw, 3.2rem);
-   font-weight: 900;
-   line-height: 1.1;
-   margin-bottom: 20px;
-   letter-spacing: -.03em;
+   font-size: clamp(1.85rem, 4.5vw, 2.75rem);
+   font-weight: 600;
+   line-height: 1.15;
+   margin-bottom: 18px;
+   letter-spacing: -0.02em;
   }
   .hero h1 em {
    font-style: normal;
-   color: var(--vk-green-dark);
+   color: var(--vein);
   }
   .hero .lead {
-   font-size: 1.2rem;
-   color: var(--vk-gray);
-   max-width: 560px;
-   margin: 0 auto 32px;
-   font-weight: 400;
+   font-size: 1.05rem;
+   color: var(--tellis);
+   max-width: 500px;
+   margin: 0 auto 30px;
+  }
+  .hero-price-row {
+   margin-bottom: 30px;
   }
   .hero-price {
    font-size: 2.5rem;
-   font-weight: 900;
-   color: var(--vk-black);
-   margin-bottom: 8px;
+   font-weight: 600;
+   color: var(--ink);
+   line-height: 1;
+   margin-bottom: 6px;
   }
   .hero-price-note {
-   font-size: .9rem;
-   color: var(--vk-gray);
-   margin-bottom: 32px;
+   font-size: 0.82rem;
+   color: var(--kivi);
   }
-  .hero-cta {
+  .btn-hero {
    display: inline-block;
-   background: var(--vk-green);
-   color: #fff;
-   padding: 18px 48px;
-   border-radius: 10px;
-   font-weight: 800;
-   font-size: 1.1rem;
+   background: var(--vein);
+   color: #ffffff;
+   padding: 15px 42px;
+   border-radius: 6px;
+   font-weight: 600;
+   font-size: 1rem;
    text-decoration: none;
-   box-shadow: 0 4px 14px rgba(22,163,74,.3);
-   transition: all .2s;
+   transition: all 0.18s;
   }
-  .hero-cta:hover { background: var(--vk-green-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(22,163,74,.35); text-decoration: none; }
-  .hero-sub { margin-top: 16px; font-size: .85rem; color: var(--vk-gray); }
+  .btn-hero:hover { background: var(--tellis); transform: translateY(-1px); text-decoration: none; }
+  .hero-sub {
+   margin-top: 14px;
+   font-size: 0.82rem;
+   color: var(--kivi);
+  }
+  .hero-sub a { color: var(--vein); font-weight: 600; }
 
   /* USP strip */
   .usp-strip {
-   background: var(--vk-black);
-   color: #fff;
-   padding: 24px 0;
+   background: var(--ink);
+   padding: 20px 0;
   }
   .usp-grid {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   gap: 24px;
+   gap: 8px;
    text-align: center;
   }
-  .usp-item .usp-icon { font-size: 1.5rem; margin-bottom: 6px; }
-  .usp-item .usp-label { font-size: .85rem; font-weight: 600; }
+  .usp-item { padding: 8px; }
+  .usp-icon { font-size: 1.25rem; margin-bottom: 4px; }
+  .usp-label { font-size: 0.78rem; font-weight: 600; color: #ffffff; }
+
+  /* Generic section */
+  .section { padding: 56px 0; }
+  .section-white { background: var(--white); }
+  .section-paper { background: var(--paper); }
+  .section-title {
+   font-size: 1.55rem;
+   font-weight: 600;
+   letter-spacing: -0.02em;
+   margin-bottom: 10px;
+   text-align: center;
+  }
+  .section-lead {
+   text-align: center;
+   color: var(--tellis);
+   font-size: 0.9rem;
+   margin-bottom: 40px;
+  }
+  .section-head {
+   text-align: center;
+   margin-bottom: 40px;
+  }
+  .section-head .overline { display: block; }
+
+  /* Exam checks */
+  .exam-grid {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 14px;
+  }
+  .exam-card {
+   background: var(--white);
+   border: 1px solid var(--kivi);
+   border-radius: 10px;
+   padding: 20px 14px;
+   text-align: center;
+  }
+  .exam-card .exam-icon { font-size: 1.5rem; margin-bottom: 10px; }
+  .exam-card .exam-name { font-size: 0.8rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
+
+  /* Categories table */
+  .cat-table-wrap {
+   overflow-x: auto;
+   border-radius: 10px;
+   border: 1px solid var(--kivi);
+   background: var(--white);
+  }
+  .cat-table {
+   width: 100%;
+   border-collapse: collapse;
+   font-size: 0.88rem;
+  }
+  .cat-table th {
+   background: var(--vein);
+   color: #ffffff;
+   padding: 13px 18px;
+   text-align: left;
+   font-weight: 600;
+   font-size: 0.8rem;
+   letter-spacing: 0.04em;
+  }
+  .cat-table td {
+   padding: 13px 18px;
+   border-bottom: 1px solid var(--roosa);
+   color: var(--ink);
+  }
+  .cat-table tr:last-child td { border-bottom: none; }
+  .cat-table tr:nth-child(even) td { background: #faf8f4; }
+  .cat-badge {
+   display: inline-block;
+   background: var(--roosa);
+   color: var(--vein);
+   border-radius: 4px;
+   padding: 2px 8px;
+   font-size: 0.78rem;
+   font-weight: 600;
+  }
+  .notice-box {
+   background: var(--roosa);
+   border-left: 3px solid var(--tellis);
+   border-radius: 0 8px 8px 0;
+   padding: 14px 18px;
+   font-size: 0.85rem;
+   color: var(--ink);
+   margin-top: 16px;
+  }
+  .notice-box a { color: var(--vein); font-weight: 600; }
 
   /* Steps */
-  .steps { padding: 64px 0; }
-  .section-title {
-   text-align: center;
-   font-size: 1.8rem;
-   font-weight: 800;
-   margin-bottom: 48px;
-   letter-spacing: -.02em;
+  .steps-list {
+   display: flex;
+   flex-direction: column;
+   gap: 0;
+   max-width: 640px;
+   margin: 0 auto;
   }
-  .steps-grid {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 32px;
+  .step-row {
+   display: flex;
+   gap: 20px;
+   align-items: flex-start;
+   position: relative;
+   padding-bottom: 30px;
   }
-  .step {
-   text-align: center;
-   padding: 32px 24px;
-   border-radius: 16px;
-   background: var(--vk-light);
+  .step-row:last-child { padding-bottom: 0; }
+  .step-row:not(:last-child)::after {
+   content: '';
+   position: absolute;
+   left: 20px;
+   top: 44px;
+   bottom: 0;
+   width: 2px;
+   background: var(--roosa);
   }
   .step-num {
-   width: 48px;
-   height: 48px;
+   flex-shrink: 0;
+   width: 42px;
+   height: 42px;
    border-radius: 50%;
-   background: var(--vk-green);
-   color: #fff;
-   font-weight: 800;
-   font-size: 1.2rem;
-   display: inline-flex;
+   background: var(--vein);
+   color: #ffffff;
+   font-weight: 600;
+   font-size: 1rem;
+   display: flex;
    align-items: center;
    justify-content: center;
-   margin-bottom: 16px;
+   position: relative;
+   z-index: 1;
   }
-  .step h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
-  .step p { font-size: .9rem; color: var(--vk-gray); }
+  .step-body { padding-top: 8px; }
+  .step-body h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; color: var(--ink); }
+  .step-body p { font-size: 0.85rem; color: var(--tellis); line-height: 1.6; }
+  .step-body a { color: var(--vein); font-weight: 600; }
+  .step-body .step-tag {
+   display: inline-block;
+   font-size: 0.72rem;
+   font-weight: 600;
+   background: var(--roosa);
+   color: var(--vein);
+   border-radius: 4px;
+   padding: 2px 8px;
+   margin-bottom: 8px;
+   text-transform: uppercase;
+   letter-spacing: 0.06em;
+  }
+
+  /* Bring list */
+  .bring-cols {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 40px;
+   align-items: start;
+  }
+  .bring-list {
+   list-style: none;
+  }
+  .bring-list li {
+   display: flex;
+   align-items: flex-start;
+   gap: 12px;
+   padding: 12px 0;
+   border-bottom: 1px solid var(--kivi);
+   font-size: 0.88rem;
+   color: var(--ink);
+  }
+  .bring-list li:last-child { border-bottom: none; }
+  .check-mark {
+   color: var(--vein);
+   font-weight: 600;
+   flex-shrink: 0;
+   line-height: 1.65;
+  }
+  .info-panel {
+   background: var(--roosa);
+   border-radius: 12px;
+   padding: 26px 22px;
+  }
+  .info-panel h3 {
+   font-size: 0.95rem;
+   font-weight: 600;
+   margin-bottom: 14px;
+   color: var(--ink);
+  }
+  .info-panel p {
+   font-size: 0.85rem;
+   color: var(--tellis);
+   margin-bottom: 10px;
+   line-height: 1.6;
+  }
+  .info-panel p:last-child { margin-bottom: 0; }
+  .info-panel a { color: var(--vein); font-weight: 600; }
 
   /* Pricing */
-  .pricing {
-   padding: 64px 0;
-   background: var(--vk-light);
-  }
   .price-cards {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 24px;
-   max-width: 700px;
+   max-width: 640px;
    margin: 0 auto;
   }
   .price-card {
-   background: var(--vk-white);
-   border: 2px solid var(--vk-border);
-   border-radius: 16px;
-   padding: 36px 28px;
-   text-align: center;
-   transition: border-color .2s;
-  }
-  .price-card:hover { border-color: var(--vk-green); }
-  .price-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
-  .price-card .cat { font-size: .85rem; color: var(--vk-gray); margin-bottom: 16px; }
-  .price-card .price { font-size: 2.2rem; font-weight: 900; color: var(--vk-green-dark); }
-  .price-card .includes { font-size: .8rem; color: var(--vk-gray); margin-top: 12px; line-height: 1.5; }
-
-  /* Checklist */
-  .checklist { padding: 64px 0; }
-  .check-grid {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 48px;
-   align-items: start;
-  }
-  .check-list { list-style: none; }
-  .check-list li {
-   padding: 12px 0;
-   border-bottom: 1px solid var(--vk-border);
-   font-size: .95rem;
-   display: flex;
-   align-items: flex-start;
-   gap: 12px;
-  }
-  .check-list li::before { display: none; }
-  .check-mark { color: var(--vk-green); font-weight: 700; flex-shrink: 0; }
-  .check-info {
-   background: var(--vk-light);
+   background: var(--white);
+   border: 2px solid var(--kivi);
    border-radius: 12px;
-   padding: 28px;
+   padding: 30px 22px;
+   text-align: center;
+   transition: border-color 0.18s;
   }
-  .check-info h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; }
-  .check-info p { font-size: .9rem; color: var(--vk-gray); margin-bottom: 8px; }
+  .price-card:hover { border-color: var(--vein); }
+  .price-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+  .price-card .cat-list { font-size: 0.8rem; color: var(--kivi); margin-bottom: 16px; }
+  .price-amount { font-size: 2.1rem; font-weight: 600; color: var(--vein); line-height: 1; margin-bottom: 12px; }
+  .price-includes { font-size: 0.78rem; color: var(--tellis); line-height: 1.55; }
+
+  /* Booking widget */
+  .booking-section { background: var(--paper); padding: 56px 0; }
+  .booking-intro {
+   text-align: center;
+   margin-bottom: 28px;
+  }
+  .booking-note {
+   background: var(--roosa);
+   border-radius: 8px;
+   padding: 14px 20px;
+   font-size: 0.84rem;
+   color: var(--ink);
+   text-align: center;
+   margin-bottom: 20px;
+  }
+  .booking-note strong { color: var(--vein); }
+  .booking-widget-wrap {
+   background: var(--white);
+   border-radius: 12px;
+   border: 1px solid var(--kivi);
+   overflow: hidden;
+  }
+  .booking-widget-wrap iframe {
+   display: block;
+   width: 100%;
+   height: 620px;
+   border: none;
+  }
 
   /* FAQ */
-  .faq { padding: 64px 0; background: var(--vk-light); }
-  .faq-list { max-width: 700px; margin: 0 auto; }
+  .faq-list {
+   max-width: 680px;
+   margin: 0 auto;
+  }
   .faq-item {
-   background: var(--vk-white);
-   border-radius: 12px;
-   margin-bottom: 12px;
+   background: var(--white);
+   border: 1px solid var(--kivi);
+   border-radius: 10px;
+   margin-bottom: 10px;
    overflow: hidden;
   }
   .faq-item summary {
-   padding: 20px 24px;
-   font-weight: 700;
-   font-size: .95rem;
+   padding: 17px 20px;
+   font-weight: 600;
+   font-size: 0.88rem;
    cursor: pointer;
    list-style: none;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   color: var(--ink);
+   gap: 12px;
   }
-  .faq-item summary::after { content: '+'; font-size: 1.3rem; color: var(--vk-gray); }
-  .faq-item[open] summary::after { content: '-'; }
-  .faq-item .faq-body { padding: 0 24px 20px; font-size: .9rem; color: var(--vk-gray); line-height: 1.7; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-icon {
+   flex-shrink: 0;
+   width: 22px;
+   height: 22px;
+   border-radius: 50%;
+   background: var(--roosa);
+   color: var(--vein);
+   font-size: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 400;
+   line-height: 1;
+  }
+  .faq-item[open] .faq-icon::before { content: '-'; }
+  .faq-icon::before { content: '+'; }
+  .faq-body {
+   padding: 0 20px 18px;
+   font-size: 0.84rem;
+   color: var(--tellis);
+   line-height: 1.7;
+  }
+  .faq-body a { color: var(--vein); font-weight: 600; }
 
   /* CTA bottom */
   .cta-bottom {
-   background: var(--vk-green);
-   color: #fff;
-   padding: 64px 0;
+   background: var(--vein);
+   color: #ffffff;
+   padding: 56px 0;
    text-align: center;
   }
-  .cta-bottom h2 { font-size: 1.8rem; font-weight: 800; margin-bottom: 12px; }
-  .cta-bottom p { font-size: 1.05rem; opacity: .9; margin-bottom: 28px; }
-  .cta-bottom .btn-white {
+  .cta-bottom h2 { font-size: 1.6rem; font-weight: 600; margin-bottom: 10px; }
+  .cta-bottom p { font-size: 0.95rem; opacity: 0.85; margin-bottom: 26px; }
+  .btn-white {
    display: inline-block;
-   background: #fff;
-   color: var(--vk-green-dark);
-   padding: 16px 40px;
-   border-radius: 10px;
-   font-weight: 800;
-   font-size: 1rem;
+   background: #ffffff;
+   color: var(--vein);
+   padding: 14px 36px;
+   border-radius: 6px;
+   font-weight: 600;
+   font-size: 0.95rem;
    text-decoration: none;
-   transition: transform .2s;
+   transition: transform 0.18s;
   }
-  .cta-bottom .btn-white:hover { transform: translateY(-2px); text-decoration: none; }
+  .btn-white:hover { transform: translateY(-1px); text-decoration: none; }
 
   /* Footer */
-  .footer {
-   background: var(--vk-black);
-   color: rgba(255,255,255,.6);
-   padding: 40px 0;
-   font-size: .85rem;
+  .site-footer {
+   background: var(--ink);
+   color: rgba(255,255,255,0.5);
+   padding: 32px 0;
+   font-size: 0.8rem;
   }
-  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-  .footer a { color: rgba(255,255,255,.8); }
+  .footer-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 24px;
+   flex-wrap: wrap;
+  }
+  .footer-col strong { color: #ffffff; display: block; margin-bottom: 6px; }
+  .footer-col a { color: rgba(255,255,255,0.7); }
+  .footer-col a:hover { color: #ffffff; text-decoration: underline; }
+  .footer-line { margin-bottom: 4px; }
+
+  /* Divider */
+  .divider { border: none; border-top: 1px solid var(--kivi); margin: 0; }
 
   /* Mobile */
   @media (max-width: 768px) {
-   .usp-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-   .steps-grid { grid-template-columns: 1fr; gap: 16px; }
-   .price-cards { grid-template-columns: 1fr; }
-   .check-grid { grid-template-columns: 1fr; gap: 24px; }
-   .hero { padding: 48px 0 40px; }
    .header-phone { display: none; }
+   .hero { padding: 44px 0 36px; }
+   .usp-grid { grid-template-columns: repeat(2, 1fr); }
+   .exam-grid { grid-template-columns: repeat(3, 1fr); }
+   .bring-cols { grid-template-columns: 1fr; gap: 24px; }
+   .price-cards { grid-template-columns: 1fr; }
+   .footer-inner { flex-direction: column; gap: 16px; }
+   .booking-widget-wrap iframe { height: 520px; }
+  }
+  @media (max-width: 480px) {
+   .exam-grid { grid-template-columns: repeat(2, 1fr); }
+   .cat-table th, .cat-table td { padding: 10px 12px; font-size: 0.8rem; }
   }
  </style>
 </head>
@@ -306,31 +519,40 @@
 
 <!-- Top info bar -->
 <div class="top-bar">
- Avatud: E-R 9:00-18:00 · L 12:00-16:00 · Riigipühadel 12:00-16:00 ·
+ <span>E-R 9:00-18:00</span>
+ <span class="sep">·</span>
+ <span>L 12:00-16:00</span>
+ <span class="sep">·</span>
+ <span>Riigipühadel 12:00-16:00</span>
+ <span class="sep">·</span>
  <a href="tel:+37259110909">+372 5911 0909</a>
 </div>
 
 <!-- Header -->
-<header class="header">
+<header class="site-header">
  <div class="container">
-  <a href="https://valvekliinik.ee" class="logo"><span>Valve</span>kliinik</a>
-  <div class="header-right">
+  <a href="https://valvekliinik.ee" class="logo-link">
+   <img src="https://valvekliinik.ee/wp-content/uploads/2021/08/vk-logo.svg" alt="Valvekliinik">
+  </a>
+  <nav class="header-nav">
    <a href="tel:+37259110909" class="header-phone">+372 5911 0909</a>
-   <a href="https://valvekliinik.ee/broneerimine/" class="header-cta">Broneerige aeg</a>
-  </div>
+   <a href="#broneeri" class="btn-primary">Broneerige aeg</a>
+  </nav>
  </div>
 </header>
 
 <!-- Hero -->
 <section class="hero">
  <div class="container">
-  <div class="hero-badge">Samal päeval - ilma saatekirjata</div>
+  <span class="overline">Samal päeval - ilma saatekirjata</span>
   <h1>Juhiloa tervisetõend<br><em>kiirelt ja mugavalt</em></h1>
-  <p class="lead">Tervisekontroll ja tõendi väljastamine ühel visiidil. Tõend jõuab Transpordiametisse digitaalselt.</p>
-  <div class="hero-price">alates 65 €</div>
-  <div class="hero-price-note">Kategooriad A, B, AM, T ja nende alamkategooriad</div>
-  <a href="https://valvekliinik.ee/broneerimine/" class="hero-cta">Broneerige aeg →</a>
-  <p class="hero-sub">Või helistage <a href="tel:+37259110909" style="color:var(--vk-green-dark);font-weight:700;">+372 5911 0909</a></p>
+  <p class="lead">Tervisekontroll ja tõendi väljastamine ühel lühikesel visiidil. Tõend jõuab Transpordiametisse automaatselt.</p>
+  <div class="hero-price-row">
+   <div class="hero-price">alates 65 €</div>
+   <div class="hero-price-note">Kategooriad A, B, AM, T ja nende alamkategooriad</div>
+  </div>
+  <a href="#broneeri" class="btn-hero">Broneerige aeg</a>
+  <p class="hero-sub">Või helistage <a href="tel:+37259110909">+372 5911 0909</a></p>
  </div>
 </section>
 
@@ -340,124 +562,349 @@
   <div class="usp-grid">
    <div class="usp-item">
     <div class="usp-icon">⏱</div>
-    <div class="usp-label">~15 minutit</div>
+    <div class="usp-label">Umbes 15 minutit</div>
    </div>
    <div class="usp-item">
-    <div class="usp-icon">📋</div>
+    <div class="usp-icon">📅</div>
     <div class="usp-label">Samal päeval</div>
    </div>
    <div class="usp-item">
-    <div class="usp-icon">🏥</div>
+    <div class="usp-icon">📄</div>
     <div class="usp-label">Ilma saatekirjata</div>
    </div>
    <div class="usp-item">
     <div class="usp-icon">📍</div>
-    <div class="usp-label">Ülemiste, Tallinn</div>
+    <div class="usp-label">Ülemiste City, Tallinn</div>
    </div>
   </div>
  </div>
 </div>
 
-<!-- Steps -->
-<section class="steps">
+<!-- What is checked -->
+<section class="section section-white">
  <div class="container">
-  <h2 class="section-title">Kuidas see käib?</h2>
-  <div class="steps-grid">
-   <div class="step">
+  <div class="section-head">
+   <span class="overline">Tervisekontroll</span>
+   <h2 class="section-title">Mida kontrollitakse?</h2>
+   <p class="section-lead">Juhiloa tervisekontroll on lühike ja terviklik.</p>
+  </div>
+  <div class="exam-grid">
+   <div class="exam-card">
+    <div class="exam-icon">❤️</div>
+    <div class="exam-name">Vererõhk</div>
+   </div>
+   <div class="exam-card">
+    <div class="exam-icon">👁️</div>
+    <div class="exam-name">Nägemine</div>
+   </div>
+   <div class="exam-card">
+    <div class="exam-icon">⚖️</div>
+    <div class="exam-name">Kehamassi indeks (KMI)</div>
+   </div>
+   <div class="exam-card">
+    <div class="exam-icon">📏</div>
+    <div class="exam-name">Kaela ümbermõõt</div>
+   </div>
+   <div class="exam-card">
+    <div class="exam-icon">🩸</div>
+    <div class="exam-name">Veresuhkur</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<hr class="divider">
+
+<!-- Driving license categories -->
+<section class="section section-white">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Transpordiameti nõuded</span>
+   <h2 class="section-title">Kategooriad ja kehtivusajad</h2>
+   <p class="section-lead">Tõendi kehtivusaeg sõltub juhiloa kategooriast ja Teie vanusest.</p>
+  </div>
+  <div class="cat-table-wrap">
+   <table class="cat-table">
+    <thead>
+     <tr>
+      <th>Kategooria</th>
+      <th>Näited</th>
+      <th>Kehtivus (kuni 65-aastased)</th>
+      <th>Kehtivus (65+ aastased)</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td><span class="cat-badge">I kategooria</span></td>
+      <td>A, B, AM, T ja alamkategooriad</td>
+      <td>Iga 10 aasta järel</td>
+      <td>Iga 5 aasta järel</td>
+     </tr>
+     <tr>
+      <td><span class="cat-badge">II kategooria</span></td>
+      <td>C, D, E ja alamkategooriad</td>
+      <td>Iga 5 aasta järel</td>
+      <td>Iga 5 aasta järel</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="notice-box">
+   Üle 65-aastastel juhtidel kehtib tervisetõend kõikide kategooriate puhul 5 aastat.
+   Lisateave: <a href="https://transpordiamet.ee/tervisetoend-autojuhile" target="_blank" rel="noopener noreferrer">transpordiamet.ee/tervisetoend-autojuhile</a>
+  </div>
+ </div>
+</section>
+
+<!-- Steps -->
+<section class="section section-paper">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Kuidas see käib</span>
+   <h2 class="section-title">Kolm sammu tõendini</h2>
+   <p class="section-lead">Protsess on lihtne ja kiire.</p>
+  </div>
+  <div class="steps-list">
+   <div class="step-row">
     <div class="step-num">1</div>
-    <h3>Täitke terviseteatis</h3>
-    <p>Enne visiiti täitke terviseteatis <a href="https://www.digilugu.ee" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a> kaudu (Smart-ID või ID-kaardiga).</p>
+    <div class="step-body">
+     <span class="step-tag">Enne visiiti</span>
+     <h3>Täitke tervisedeklaratsioon</h3>
+     <p>Minge <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a> lehele ja täitke tervisedeklaratsioon Smart-ID või ID-kaardiga. See on e-tervisetõendi taotlemise esimene samm ning peab olema tehtud enne vastuvõtule tulekut.</p>
+    </div>
    </div>
-   <div class="step">
+   <div class="step-row">
     <div class="step-num">2</div>
-    <h3>Tulge kohale</h3>
-    <p>Tervisekontroll kestab umbes 15 minutit. Mõõdame vererõhu, nägemise, veresuhkru, KMI ja kaela ümbermõõdu.</p>
+    <div class="step-body">
+     <span class="step-tag">Visiit</span>
+     <h3>Tulge tervisekontrolli</h3>
+     <p>Tervisekontroll kestab umbes 15 minutit. Mõõdame vererõhu, nägemise, KMI, kaela ümbermõõdu ja veresuhkru. Võtke kaasa isikut tõendav dokument ja prillid (kui kannate). Tulge tühja kõhuga - söömata vähemalt 2 tundi enne visiiti (vesi on lubatud).</p>
+    </div>
    </div>
-   <div class="step">
+   <div class="step-row">
     <div class="step-num">3</div>
-    <h3>Tõend on valmis</h3>
-    <p>Tõend väljastatakse digitaalselt ja jõuab Transpordiametisse elektrooniliselt. Paberit ei ole vaja.</p>
+    <div class="step-body">
+     <span class="step-tag">Tõend</span>
+     <h3>Tõend jõuab automaatselt Transpordiametisse</h3>
+     <p>Tõend väljastatakse digitaalselt ja jõuab automaatselt liiklusregistrisse. Paberit ei ole vaja - kõik toimub elektrooniliselt. Tõend on kehtiv vahetult pärast väljastamist.</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- Bring + exam info -->
+<section class="section section-white">
+ <div class="container">
+  <div class="section-head">
+   <span class="overline">Ettevalmistus</span>
+   <h2 class="section-title">Mida kaasa võtta?</h2>
+  </div>
+  <div class="bring-cols">
+   <ul class="bring-list">
+    <li>
+     <span class="check-mark">✓</span>
+     <span>Isikut tõendav dokument (ID-kaart või pass)</span>
+    </li>
+    <li>
+     <span class="check-mark">✓</span>
+     <span>Prillid või kontaktläätsed, kui kannate - nägemiskontroll toimub nendega</span>
+    </li>
+    <li>
+     <span class="check-mark">✓</span>
+     <span>Täidetud tervisedeklaratsioon <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a> kaudu</span>
+    </li>
+    <li>
+     <span class="check-mark">✓</span>
+     <span>Tulge tühja kõhuga - mitte süüa vähemalt 2 tundi enne vastuvõttu (vesi on lubatud)</span>
+    </li>
+   </ul>
+   <div class="info-panel">
+    <h3>Kasulik teada</h3>
+    <p>Tervisedeklaratsioon tuleb täita eelnevalt <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a> kaudu. Ilma täidetud deklaratsioonita tõendit väljastada ei saa.</p>
+    <p>Kui tervisekontrolli käigus takistavaid terviseprobleeme ei esine, väljastatakse tõend samal päeval.</p>
+    <p>Tõend jõuab Transpordiametisse digitaalselt - paberit või eraldi esitamist ei ole vaja.</p>
+    <p>Lisateave: <a href="https://transpordiamet.ee/tervisetoend-autojuhile" target="_blank" rel="noopener noreferrer">transpordiamet.ee</a></p>
    </div>
   </div>
  </div>
 </section>
 
 <!-- Pricing -->
-<section class="pricing">
+<section class="section section-paper">
  <div class="container">
-  <h2 class="section-title">Hinnakiri</h2>
+  <div class="section-head">
+   <span class="overline">Hinnakiri</span>
+   <h2 class="section-title">Selge hind, lisatasudeta</h2>
+   <p class="section-lead">Tervisekontroll ja tõendi väljastamine ühes hinnas.</p>
+  </div>
   <div class="price-cards">
    <div class="price-card">
-    <h3>Kategooriad A, B</h3>
-    <div class="cat">AM, T ja alamkategooriad</div>
-    <div class="price">65 €</div>
-    <div class="includes">Tervisekontroll + tõendi väljastamine.<br>Tavapärane juhiluba, mootorratas, moped.</div>
+    <h3>I kategooria</h3>
+    <div class="cat-list">Kategooriad A, B, AM, T<br>ja nende alamkategooriad</div>
+    <div class="price-amount">65 €</div>
+    <div class="price-includes">
+     Tervisekontroll + tõendi väljastamine.<br>
+     Tavapärane juhiluba, mootorratas, moped, traktor.
+    </div>
    </div>
    <div class="price-card">
-    <h3>Kategooriad C, D, E</h3>
-    <div class="cat">Veoauto, buss, haagis</div>
-    <div class="price">90 €</div>
-    <div class="includes">Laiendatud tervisekontroll + tõendi väljastamine.<br>Professionaalsed juhikategooriad.</div>
+    <h3>II kategooria</h3>
+    <div class="cat-list">Kategooriad C, D, E<br>ja nende alamkategooriad</div>
+    <div class="price-amount">90 €</div>
+    <div class="price-includes">
+     Laiendatud tervisekontroll + tõendi väljastamine.<br>
+     Veoauto, buss, haagis - professionaalsed juhikategooriad.
+    </div>
    </div>
   </div>
  </div>
 </section>
 
-<!-- What to bring -->
-<section class="checklist">
+<!-- Booking widget -->
+<section class="booking-section" id="broneeri">
  <div class="container">
-  <h2 class="section-title">Mida kaasa võtta?</h2>
-  <div class="check-grid">
-   <ul class="check-list">
-    <li><span class="check-mark">✓</span> Isikut tõendav dokument (ID-kaart, pass)</li>
-    <li><span class="check-mark">✓</span> Prillid, kui kannate (nägemiskontroll)</li>
-    <li><span class="check-mark">✓</span> Täidetud terviseteatis <a href="https://www.digilugu.ee" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a> kaudu</li>
-    <li><span class="check-mark">✓</span> Tulge tühja kõhuga (veesõõm lubatud - mitte vähem kui 2 tundi enne vastuvõttu)</li>
-   </ul>
-   <div class="check-info">
-    <h3>Mis toimub tervisekontrollil?</h3>
-    <p>Mõõdame vererõhu, nägemise, kehamassi indeksi ehk KMI, kaela ümbermõõdu ja veresuhkru.</p>
-    <p>Kui tervisekontrolli käigus tõendi väljastamist takistavaid terviseprobleeme ei esine, väljastame tõendi samal päeval.</p>
-    <p>Tõend väljastatakse digitaalselt ja on Transpordiametile kättesaadav elektrooniliselt.</p>
-    <p style="margin-top:16px;"><a href="https://transpordiamet.ee/tervisetoend-autojuhile" target="_blank" rel="noopener noreferrer">Lisateave Transpordiameti lehel →</a></p>
-   </div>
+  <div class="booking-intro">
+   <span class="overline">Ajabroneerimissüsteem</span>
+   <h2 class="section-title" style="margin-bottom:8px;">Broneerige aeg</h2>
+   <p class="section-lead">Valige sobiv aeg allpool. Broneerimiseks ei pea te registreeruma.</p>
   </div>
+  <div class="booking-note">
+   Valige teenus: <strong>"Tervisekontroll mootorsõidukijuhi tervisetõendi taotlemiseks I kategooria"</strong> (kat A/B/AM/T)
+   või <strong>"...II kategooria"</strong> (kat C/D/E)
+  </div>
+  <div class="booking-widget-wrap">
+   <iframe
+    src="https://connectedserver.eu/ConnectedOnlineX/default.aspx?key=XxX0j1C0&lang=et"
+    title="Broneerige tervisekontrolli aeg"
+    allowfullscreen
+   ></iframe>
+  </div>
+  <p style="text-align:center; margin-top:16px; font-size:0.82rem; color:var(--kivi);">
+   Küsimused? Helistage <a href="tel:+37259110909" style="font-weight:600; color:var(--vein);">+372 5911 0909</a> või kirjutage <a href="mailto:info@valvekliinik.ee" style="color:var(--vein);">info@valvekliinik.ee</a>
+  </p>
  </div>
 </section>
 
 <!-- FAQ -->
-<section class="faq">
+<section class="section section-white">
  <div class="container">
-  <h2 class="section-title">Korduma kippuvad küsimused</h2>
+  <div class="section-head">
+   <span class="overline">Korduma kippuvad küsimused</span>
+   <h2 class="section-title">Vastused levinud küsimustele</h2>
+  </div>
   <div class="faq-list">
+
    <details class="faq-item">
-    <summary>Kas on vaja eelnevalt aega broneerida?</summary>
-    <div class="faq-body">Soovitame broneerida aja meie <a href="https://valvekliinik.ee/broneerimine/">veebilehel</a> või helistades +372 5911 0909, et tagada kiireim teenindus.</div>
+    <summary>
+     Kas juhiloa tervisetõendit saab samal päeval?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Jah. Kui Te täitsite eelnevalt tervisedeklaratsiooni <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a> kaudu ja tervisekontrolli käigus takistusi ei ilmne, väljastatakse tõend samal päeval. Tõend jõuab Transpordiametisse digitaalselt.
+    </div>
    </details>
+
    <details class="faq-item">
-    <summary>Kas saab tulla ka laupäeval?</summary>
-    <div class="faq-body">Jah. Oleme avatud laupäeviti 12:00-16:00 ja riigipühadel 12:00-16:00.</div>
+    <summary>
+     Kas on vaja saatekirja?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Ei, saatekirja ei ole vaja. Pöörduge otse meie poole - broneerige aeg veebis või helistage +372 5911 0909.
+    </div>
    </details>
+
    <details class="faq-item">
-    <summary>Kui kaua tõendi väljastamine aega võtab?</summary>
-    <div class="faq-body">Tervisekontroll kestab umbes 15 minutit. Kui terviseprobleeme ei esine, väljastame tõendi samal päeval.</div>
+    <summary>
+     Mis on tervisedeklaratsioon ja kust seda täita?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Tervisedeklaratsioon on e-tervisetõendi taotlemise kohustuslik esimene samm. Täitke see enne visiiti <a href="https://www.terviseportaal.ee/" target="_blank" rel="noopener noreferrer">terviseportaal.ee</a> lehel Smart-ID või ID-kaardiga. Ilma täidetud deklaratsioonita tervisetõendit väljastada ei saa.
+    </div>
    </details>
+
    <details class="faq-item">
-    <summary>Kas on vaja saatekirja?</summary>
-    <div class="faq-body">Ei, saatekirja ei ole vaja. Pöörduge otse meie poole.</div>
+    <summary>
+     Kui kaua juhiloa tervisekontroll aega võtab?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Tervisekontroll kestab umbes 15 minutit. Koos ootamisajaga planeerige visiidiks umbes 30 minutit.
+    </div>
    </details>
+
    <details class="faq-item">
-    <summary>Kas peab olema tühja kõhuga?</summary>
-    <div class="faq-body">Jah. Palume mitte süüa vähemalt 2 tundi enne vastuvõttu. Gaseerimata vesi on lubatud.</div>
+    <summary>
+     Kas peab tulema tühja kõhuga?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Jah. Palume mitte süüa vähemalt 2 tundi enne vastuvõttu, kuna mõõdame veresuhkrut. Gaseerimata vesi on lubatud.
+    </div>
    </details>
+
    <details class="faq-item">
-    <summary>Mis juhtub, kui tervis ei luba tõendit väljastada?</summary>
-    <div class="faq-body">Tõendi hind on konsultatsiooniga seotud maksumus. Juhul kui Teie tervislik seisund ei luba tõendit väljastada, raha ei tagastata.</div>
+    <summary>
+     Mis dokumente on vaja kaasa võtta?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Võtke kaasa isikut tõendav dokument (ID-kaart või pass) ning prillid või kontaktläätsed, kui kannate neid tavaliselt. Nägemiskontroll viiakse läbi koos prillide/läätsedega.
+    </div>
    </details>
+
    <details class="faq-item">
-    <summary>Kas maksta saab kaardiga?</summary>
-    <div class="faq-body">Jah, tasuda saab pangakaardiga kohapeal. Sularahamakseid ei võeta.</div>
+    <summary>
+     Kui sageli peab juhiloa tervisetõendit uuendama?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     I kategooria (A, B, AM, T) - iga 10 aasta järel (alla 65-aastastel). II kategooria (C, D, E) - iga 5 aasta järel. Üle 65-aastased juhid peavad tõendit uuendama kõikide kategooriate puhul iga 5 aasta järel.
+    </div>
    </details>
+
+   <details class="faq-item">
+    <summary>
+     Kas laupäeval saab tervisekontrolli teha?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Jah. Oleme avatud laupäeviti kell 12:00-16:00 ning riigipühadel kell 12:00-16:00. Esmaspäevast reedeni oleme avatud 9:00-18:00.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Kuhu tõend saadetakse?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Tõend väljastatakse digitaalselt ja jõuab automaatselt liiklusregistrisse. Te ei pea midagi eraldi esitama - kõik toimub elektrooniliselt vahetult pärast tõendi väljastamist.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Mis juhtub, kui tervisekontrolli käigus probleeme avastatakse?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Kui tervisekontrolli käigus ilmneb, et tõendi väljastamine ei ole võimalik, teavitame Teid sellest. Raha tagastamist konsultatsiooni eest ei toimu, kuna tervisekontroll on tehtud. Sellisel juhul saame Teid nõustada järgmiste sammude osas.
+    </div>
+   </details>
+
+   <details class="faq-item">
+    <summary>
+     Kas maksta saab pangakaardiga?
+     <span class="faq-icon"></span>
+    </summary>
+    <div class="faq-body">
+     Jah, tasuda saab pangakaardiga kohapeal. Sularahamakseid ei toimu.
+    </div>
+   </details>
+
   </div>
  </div>
 </section>
@@ -467,26 +914,203 @@
  <div class="container">
   <h2>Valmis juhiloa tõendit saama?</h2>
   <p>Broneerige aeg ja saage tõend kätte juba täna.</p>
-  <a href="https://valvekliinik.ee/broneerimine/" class="btn-white">Broneerige aeg →</a>
+  <a href="#broneeri" class="btn-white">Broneerige aeg</a>
  </div>
 </section>
 
 <!-- Footer -->
-<footer class="footer">
+<footer class="site-footer">
  <div class="container">
   <div class="footer-inner">
-   <div>
-    <strong style="color:#fff;">Valvekliinik</strong> · Sepapaja 12/1, III korrus, 11415 Tallinn<br>
-    Ülemiste Tervisemaja 2 (von Baeri maja) · Ülemiste City
+   <div class="footer-col">
+    <strong>Valvekliinik OÜ</strong>
+    <div class="footer-line">Sepapaja 12/1, III korrus</div>
+    <div class="footer-line">11415 Tallinn</div>
+    <div class="footer-line" style="margin-top:4px;">Ülemiste Tervisemaja 2 (von Baeri maja)</div>
+    <div class="footer-line">Ülemiste City</div>
    </div>
-   <div>
-    <a href="tel:+37259110909">+372 5911 0909</a> ·
-    <a href="mailto:info@valvekliinik.ee">info@valvekliinik.ee</a> ·
-    <a href="https://valvekliinik.ee" target="_blank" rel="noopener noreferrer">valvekliinik.ee</a>
+   <div class="footer-col">
+    <strong>Lahtiolekuajad</strong>
+    <div class="footer-line">E-R 9:00-18:00</div>
+    <div class="footer-line">L 12:00-16:00</div>
+    <div class="footer-line">Riigipühadel 12:00-16:00</div>
+    <div class="footer-line">Pühapäeval suletud</div>
+   </div>
+   <div class="footer-col">
+    <strong>Kontakt</strong>
+    <div class="footer-line"><a href="tel:+37259110909">+372 5911 0909</a></div>
+    <div class="footer-line"><a href="mailto:info@valvekliinik.ee">info@valvekliinik.ee</a></div>
+    <div class="footer-line" style="margin-top:4px;"><a href="https://valvekliinik.ee" target="_blank" rel="noopener noreferrer">valvekliinik.ee</a></div>
+    <div class="footer-line">Reg nr 11576944</div>
    </div>
   </div>
  </div>
 </footer>
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "MedicalClinic",
+ "name": "Valvekliinik",
+ "url": "https://valvekliinik.ee",
+ "telephone": "+37259110909",
+ "email": "info@valvekliinik.ee",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Sepapaja 12/1, III korrus",
+  "addressLocality": "Tallinn",
+  "postalCode": "11415",
+  "addressCountry": "EE"
+ },
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+   "opens": "09:00",
+   "closes": "18:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": "Saturday",
+   "opens": "12:00",
+   "closes": "16:00"
+  }
+ ],
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Tervisekontrolli teenused",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Juhiloa tervisekontroll I kategooria",
+     "description": "Mootorsõidukijuhi tervisetõend kategooriatele A, B, AM, T ja nende alamkategooriad"
+    },
+    "price": "65",
+    "priceCurrency": "EUR"
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Juhiloa tervisekontroll II kategooria",
+     "description": "Mootorsõidukijuhi tervisetõend kategooriatele C, D, E ja nende alamkategooriad"
+    },
+    "price": "90",
+    "priceCurrency": "EUR"
+   }
+  ]
+ }
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "name": "Juhiloa tervisetõend",
+ "alternateName": ["Autojuhi tervisetõend", "Juhiloa tervisekontroll", "Mootorsõidukijuhi tervisetõend"],
+ "description": "E-tervisetõend juhiloa taotlemiseks ja pikendamiseks. Tervisekontroll ja tõendi väljastamine samal päeval, ilma saatekirjata.",
+ "provider": {
+  "@type": "MedicalClinic",
+  "name": "Valvekliinik",
+  "url": "https://valvekliinik.ee"
+ },
+ "areaServed": {
+  "@type": "City",
+  "name": "Tallinn"
+ },
+ "offers": [
+  {
+   "@type": "Offer",
+   "name": "I kategooria (A, B, AM, T)",
+   "price": "65",
+   "priceCurrency": "EUR"
+  },
+  {
+   "@type": "Offer",
+   "name": "II kategooria (C, D, E)",
+   "price": "90",
+   "priceCurrency": "EUR"
+  }
+ ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Kas juhiloa tervisetõendit saab samal päeval?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Jah. Kui Te täitsite eelnevalt tervisedeklaratsiooni terviseportaal.ee kaudu ja tervisekontrolli käigus takistusi ei ilmne, väljastatakse tõend samal päeval. Tõend jõuab Transpordiametisse digitaalselt."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kas juhiloa tervisekontrolliks on vaja saatekirja?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ei, saatekirja ei ole vaja. Broneerige aeg otse Valvekliinikus veebis või helistades +372 5911 0909."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Mis on tervisedeklaratsioon ja kust seda täita?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Tervisedeklaratsioon on e-tervisetõendi taotlemise kohustuslik esimene samm. Täitke see enne visiiti terviseportaal.ee lehel Smart-ID või ID-kaardiga."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kui kaua juhiloa tervisekontroll aega võtab?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Tervisekontroll kestab umbes 15 minutit. Koos ootamisajaga planeerige visiidiks umbes 30 minutit."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kas peab tulema tühja kõhuga juhiloa tervisekontrolli?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Jah. Palume mitte süüa vähemalt 2 tundi enne vastuvõttu, kuna mõõdame veresuhkrut. Gaseerimata vesi on lubatud."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kui sageli peab juhiloa tervisetõendit uuendama?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "I kategooria (A, B, AM, T) - iga 10 aasta järel alla 65-aastastel. II kategooria (C, D, E) - iga 5 aasta järel. Üle 65-aastased juhid peavad tõendit uuendama kõikide kategooriate puhul iga 5 aasta järel."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kuhu juhiloa tervisetõend saadetakse?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Tõend väljastatakse digitaalselt ja jõuab automaatselt liiklusregistrisse. Eraldi esitamist ei ole vaja - kõik toimub elektrooniliselt."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Palju maksab juhiloa tervisekontroll?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "I kategooria (A, B, AM, T) tervisekontroll maksab 65 eurot. II kategooria (C, D, E) tervisekontroll maksab 90 eurot. Hind sisaldab tervisekontrolli ja tõendi väljastamist."
+   }
+  }
+ ]
+}
+</script>
 
 </body>
 </html>
